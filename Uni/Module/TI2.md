@@ -5,7 +5,7 @@ order: c
 ---
 # TI2 Ressourcen
 Hier finden Sie alle wichtigen Dateien und Links, die Sie für Ihren TI2-Kurs benötigen. 
-!!!
+!!!warning
 Beachten Sie bitte, dass alle Dokumente noch nicht vom Professor veröffentlicht wurden und es sein kann, dass manche nicht 1:1 identisch sind. Diese Dokumente dienen nur zu Trainingszwecken.
 !!!
 

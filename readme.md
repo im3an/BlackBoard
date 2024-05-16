@@ -6,7 +6,7 @@ title: Willkommen
 ## Projekt BlackBoard
 
 Willkommen beim Projekt BlackBoard! Dieses Wiki dient als zentrale Sammlung aller Ressourcen und Dateien für Studierende. Hier finden Sie eine Vielzahl von Tools, Dokumenten und mehr. Sie können gerne alles durchstöbern und schauen, was es hier alles gibt.
-!!!
+!!!warning
 **Bitte beachten Sie:** Alle Dokumente oder Links, die hier zur Verfügung gestellt werden, sind bereits im Internet frei erhältlich. Ich habe sie lediglich sortiert und organisiert. Ich trage keinerlei Verantwortung oder rechtliche Haftung für diese Inhalte.
 !!!
 ---

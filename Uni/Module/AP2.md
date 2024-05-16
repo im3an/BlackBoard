@@ -8,7 +8,7 @@ order: a
 
 Willkommen zu den AP2-Dokumenten. Hier finden Sie alle wichtigen Dateien und Links, die Sie für Ihren AP2-Kurs benötigen.
 
-!!!
+!!!info
 **Wichtiger Hinweis**
 
 Beachten Sie bitte, dass alle Ressourcen nur zu Übungszwecken genutzt werden dürfen und nicht vom Professor veröffentlicht wurden. Kopieren Sie keinen Code oder Lösungen. Diese dienen ausschließlich zum Lernen und Verstehen. Das Teilen des Links zu diesem Wiki ist ebenfalls nicht erlaubt. Wir übernehmen keinerlei Haftung oder Verantwortung für den Missbrauch der Dokumente.

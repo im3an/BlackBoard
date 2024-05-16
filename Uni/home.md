@@ -5,8 +5,7 @@ order: 1
 ---
 
 # Willkommen
-!!!
-**Wichtiger Hinweis zu unseren Ressourcen**
+!!!warning **Wichtiger Hinweis zu unseren Ressourcen**
 
 Das Kopieren von Code oder Lösungen aus unseren Dokumenten ist strengstens verboten. Unsere Inhalte dienen ausschließlich als Hilfe für Studierende, um das Verständnis zu fördern, und nicht dazu, Lösungen abzuschreiben. Sollten wir feststellen, dass Lösungen 1 zu 1 abgeschrieben oder kopiert werden, werden wir den Zugang zu diesem Drive stoppen und die Inhalte privat machen.
 
