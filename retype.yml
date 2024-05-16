@@ -1,0 +1,17 @@
+input: .
+output: .retype
+url: # Add your website address here
+branding:
+  title: THK BlackBoard
+  label: v1.1
+links:
+- text: Google Drive ↗︎
+  link: https://drive.google.com/drive/u/1/folders/1xpEDVhWXqmN0r3rA-h2HZBAJaNQqYNSW
+- text: Discord ↗︎
+  link: https://drive.google.com/drive/u/1/folders/1xpEDVhWXqmN0r3rA-h2HZBAJaNQqYNSW
+- text: Hidden Link ↗︎
+  link: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+- text: Guides ↗︎
+  link: https://rentry.co/fmhy-guides
+footer:
+  copyright: "&copy; Copyright THK BlackBoard, with 💙 by PunchMeSantana {{ year }}. All rights reserved."
