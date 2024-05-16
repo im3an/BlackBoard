@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.769174172686">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.5.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Entwickler Tools</title>
+    <meta name="title" content="Entwickler Tools">
+    <meta name="description" content="Git, Hosting, App Dev, Software Dev">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="/tools/devtools/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/tools/devtools/">
+    <meta property="og:title" content="Entwickler Tools">
+    <meta property="og:description" content="Git, Hosting, App Dev, Software Dev">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="/tools/devtools/">
+    <meta property="twitter:title" content="Entwickler Tools">
+    <meta property="twitter:description" content="Git, Hosting, App Dev, Software Dev">
+
+    <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../../resources/css/retype.css?v=3.5.0.769174172686" rel="stylesheet">
+
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.769174172686" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.769174172686" data-turbo-eval="false" defer></script>
+</head>
+<body>
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-xl">
+                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">THK BlackBoard</span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.1</span>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://drive.google.com/drive/u/1/folders/1xpEDVhWXqmN0r3rA-h2HZBAJaNQqYNSW">Google Drive ↗︎</a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://drive.google.com/drive/u/1/folders/1xpEDVhWXqmN0r3rA-h2HZBAJaNQqYNSW">Discord ↗︎</a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Hidden Link ↗︎</a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://rentry.co/fmhy-guides">Guides ↗︎</a>
+                            </li>
+        
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+                            <input class="w-full h-10 placeholder-gray-400 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 dark:placeholder-dark-400" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
+                        </div>
+        
+                        <!-- Mobile search button -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placeholder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
+                </div>
+            
+                <div class="pl-6 mt-1 mb-4">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                            <nav>
+                                <ul class="flex flex-wrap justify-center items-center">
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://drive.google.com/drive/u/1/folders/1xpEDVhWXqmN0r3rA-h2HZBAJaNQqYNSW">Google Drive ↗︎</a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://drive.google.com/drive/u/1/folders/1xpEDVhWXqmN0r3rA-h2HZBAJaNQqYNSW">Discord ↗︎</a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Hidden Link ↗︎</a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://rentry.co/fmhy-guides">Guides ↗︎</a>
+                                    </li>
+            
+                                </ul>
+                            </nav>
+                        </div>
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                                <!-- Page content  -->
+<doc-anchor-target id="entwickler-tools" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#entwickler-tools">#</doc-anchor-trigger>
+        <span>Entwickler Tools</span>
+    </h1>
+</doc-anchor-target>
+<p>Git, Hosting, App Dev, Software Dev</p>
+<doc-anchor-target id="cheat-sheets">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cheat-sheets">#</doc-anchor-trigger>
+        <span>Cheat Sheets</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://lecoupa.github.io/awesome-cheatsheets/">Awesome Cheatsheets</a></strong>, <a href="https://github.com/gleitz/howdoi">HowDoI</a>, <a href="https://overapi.com/">OverApi</a> oder <a href="http://www.cheat-sheets.org/">Cheat Sheets</a> - Programmier-Cheat Sheets</li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_cli_cheat_sheets">CLI Cheat Sheets</a></strong></li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://quickref.me/">QuickRef.me</a></strong>, <a href="https://www.dark-hamster.com/">Dark Hamster</a> oder <a href="https://devhints.io/">Devhints</a> - Entwickler-Cheat Sheets</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://www.30secondsofcode.org/">30 Seconds of Code</a></strong>, <a href="https://freefrontend.com/">FreeFrontend</a>, <a href="https://snipit.io/">SnipIt</a> oder <a href="https://phuoc.ng/collection/html-dom/">HTML-Dom</a> - Code Snippets finden</li>
+<li><a href="https://keycheck.dev/">KeyCheck</a> - Hotkeys für Dev-Tools</li>
+<li><a href="https://github.com/starkblaze01/Algorithms-Cheatsheet-Resources">Algorithms-Cheatsheet-Resources</a> - Algorithmus-Cheat Sheets</li>
+<li><a href="https://gto76.github.io/python-cheatsheet/">Python Cheatsheet</a>, <a href="https://speedsheet.io/">SpeedSheet</a> oder <a href="https://gto76.github.io/python-cheatsheet/">python-cheatsheet</a> - Python Cheat Sheets</li>
+<li><a href="https://en.cppreference.com/w/">cppreference</a> - C++ Cheat Sheets</li>
+<li><a href="https://react-typescript-cheatsheet.netlify.app">React Typescript Cheatsheet</a> - React Typescript Cheat Sheets</li>
+<li><a href="https://i.ibb.co/Ctr0Tn8/e289a15e2246.jpg">SQL Cheat Sheet</a> - SQL Cheat Sheet</li>
+<li><a href="https://docs.emmet.io/cheat-sheet/">CSS Cheat Sheet</a> oder <a href="https://css-tricks.com/snippets/">CSS Tricks</a> - CSS Cheat Sheet</li>
+<li><a href="https://easings.net/">Easings</a> - CSS-Animations-Cheat Sheet</li>
+<li><a href="https://bem-cheat-sheet.9elements.com/">BEM Cheat Sheet</a> - BEM Cheat Sheet</li>
+<li><a href="https://i.ibb.co/FbdMMHN/460e75dd8543.png">Vim Cheatsheet</a> oder <a href="https://vim.rtorr.com/">rTorr</a> - Vim Editor Cheat Sheets</li>
+<li><a href="https://vim.fandom.com/wiki/Category:VimTip">VimTip</a> - Vim Editor Tipps</li>
+<li><a href="https://surma.github.io/underdash/">Underdash</a> - JS Snippets</li>
+<li><a href="https://github.com/tiimgreen/github-cheat-sheet">GitHub Cheat Sheet</a> - GitHub Cheat Sheet</li>
+<li><a href="https://html.com/">HTML.com</a> - HTML Guide / Cheat Sheet</li>
+<li><a href="https://seo-cheat-sheet.9elements.com/">SEO Cheat Sheet</a> - SEO Cheat Sheet</li>
+</ul>
+<hr>
+<doc-anchor-target id="kurse--tutorials">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#kurse--tutorials">#</doc-anchor-trigger>
+        <span>Kurse / Tutorials</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://panx.io/awesome-certificates/">Awesome Certificates</a></strong> - Entwicklerkurs-Indexe</li>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://github.com/rShetty/awesome-podcasts">Awesome Podcasts</a></strong> - Podcasts für Softwareentwickler</li>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://github.com/JoseDeFreitas/awesome-youtubers">Awesome YouTubers</a></strong> - YouTube Dev-Kanal-Indexe</li>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://rentry.co/ProgrammingLearningResources">ProgrammingLearningResources</a></strong> oder <a href="https://github.com/dipakkr/A-to-Z-Resources-for-Students">A-to-Z-Resources-for-Students</a> - Programmier-Lernressourcen</li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/reading#wiki_.25B7_programming_books">Programming Book Sites</a></strong> - Programmierbücher lesen / herunterladen</li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_coding_tutorials">Programming / Coding Tutorials</a></strong></li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://www.freecodecamp.org/">freeCodeCamp</a></strong> - Programmieren / Kurse / Interaktiv</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://stackoverflow.com/">StackOverflow</a></strong> / <a href="https://code.whatever.social/">Frontend</a> oder <a href="https://www.decodingdevops.com/">DecodingDevOps</a> - Entwickler Q&amp;A</li>
+<li><a href="https://audiodev.blog/newbie-resources/">Audio Dev</a> - Audio-Programmier-Lernressourcen</li>
+<li><a href="https://dzone.com/">DZone</a> - Entwickler-Tutorials</li>
+<li><a href="https://dev.tube/">Dev.tube</a> - Entwickler-Talks</li>
+<li><a href="https://roadmap.sh/">Roadmap</a> - Entwickler-Roadmaps / <a href="https://github.com/kamranahmedse/developer-roadmap">GitHub</a></li>
+<li><a href="https://i.ibb.co/J3ppPQ3/5bdea0d754ac.png">Programming Challenges</a>, <a href="https://lightoj.com/">LightOJ</a> oder <a href="https://codegolf.stackexchange.com/">Code Golf</a> - Programmierherausforderungen</li>
+<li><a href="https://rosettacode.org/wiki/Rosetta_Code">Rosetta Code</a> - Lösungen für Programmierprobleme</li>
+<li><a href="https://www.robomind.net/">RoboMind</a> oder <a href="https://checkio.org/">Checki0</a> - Code-Lernspiele</li>
+<li><a href="https://mimo.org/">mimo</a> - Coding-Tutorial-App</li>
+<li><a href="https://github.com/Michael0x2a/curated-programming-resources">Curated Programming Resources</a> - Programmierkurse</li>
+<li><a href="https://github.com/ronreiter/interactive-tutorials">Interactive Tutorials</a> - Programmierkurse</li>
+<li><a href="https://github.com/karlhorky/learn-to-program">Learn to Program</a> - Programmierkurse</li>
+<li><a href="https://freecourses.github.io/">FreeCourses</a> - Programmierkurse</li>
+<li><a href="https://www.cloudskillsboost.google/paths">CloudSkillsBoost</a> - Programmierkurse</li>
+<li><a href="https://egghead.io/">EggHead</a> - Programmierkurse</li>
+<li><a href="https://techschool.dev/en">TechSchool</a> - Programmierkurse / <a href="https://discord.com/invite/C4abRX5skH">Discord</a></li>
+<li><a href="https://goldfish-app-5igcw.ondigitalocean.app/">Goldfish</a> - Programmierkurse</li>
+<li><a href="https://www.beej.us/guide/">Beej&#x27;s Guides</a> oder <a href="https://learnbyexample.github.io/">LearnByExample</a> - Programmieranleitungen</li>
+<li><a href="http://helloworldcollection.de/">HelloWorldCollection</a> - Hello World Programmierkollektion</li>
+<li><a href="https://www.codetriage.com/">CodeTriage</a> - Programmieren lernen durch Projekte</li>
+<li><a href="https://www.codecademy.com/">Codecademy</a> - Programmierunterricht</li>
+<li><a href="https://www.codingame.com/">CodinGame</a> - Spiele zum Üben von Programmieren</li>
+<li><a href="https://adventofcode.com/">Advent of Code</a> - Programmierpuzzles</li>
+<li><a href="https://learnxinyminutes.com/">Learn X in Y minutes</a>, <a href="https://github.com/adambard/learnxinyminutes-docs">2</a> - Programmier-Sprachführungen</li>
+<li><a href="https://github.com/fredoverflow/karel">Karel The Robot</a> - Grundlegende Programmierlehrumgebung</li>
+<li><a href="https://github.com/practical-tutorials/project-based-learning">Project Based Learning</a> - Sammlung von projektbasierten Tutorials</li>
+<li><a href="https://techdevguide.withgoogle.com/">Tech Dev Guide</a> -</li>
+<li><a href="https://github.com/jwasham/coding-interview-university">Interview University</a> - Studienführer für Software-Ingenieure</li>
+<li><a href="https://github.com/orrsella/soft-eng-interview-prep">Software Engineering Interview Preparation</a> - Software-Ingenieur-Interviewvorbereitung</li>
+<li><a href="https://cs1000.surge.sh/">cs1000</a> - CS / Software-Engineering</li>
+<li><a href="https://github.com/donnemartin/system-design-primer">system-design-primer</a> - Leitfäden zur Systemgestaltung im großen Maßstab</li>
+<li><a href="https://learntocloud.guide/">LearnToCloud</a> - Cloud-Computing-Leitfaden</li>
+<li><a href="http://learnyouahaskell.com/chapters">LearnYouHaskell</a> - Haskell-Leitfaden</li>
+<li><a href="https://github.com/inancgumus/learngo">LearnGo</a> oder <a href="https://play-with-go.dev/">play-with-go</a> - Go-Programmierung lernen</li>
+<li><a href="https://www.learn-perl.org/">Learn Perl</a> - Perl lernen</li>
+<li><a href="https://github.com/ctjhoa/rust-learning">Rust Learning</a> - Rust-Lernressourcen</li>
+<li><a href="https://jrvidal.github.io/explaine.rs/">explaine.rs</a> - Rust-Syntax-Erklärung</li>
+<li><a href="https://highassurance.rs/">High Assurance Rust</a> - Software-Entwicklungsleitfaden</li>
+<li><a href="https://learnopengl.com/">LearnOpenGL</a> - OpenGL lernen</li>
+<li><a href="https://github.com/bregman-arie/devops-exercises">Devops Exercises</a> - DevOps-Übungen</li>
+<li><a href="https://github.com/MichaelCade/90DaysOfDevOps">90DaysOfDevOps</a> - DevOps lernen</li>
+<li><a href="https://sqlbolt.com/">Learn SQL</a> - SQL-Unterricht</li>
+<li><a href="https://sqlpd.com/">SQL PD</a> - SQL-Lernspiel</li>
+<li><a href="https://www.postgresqltutorial.com/">PostgreSQL Tutorial</a> - PostgreSQL-Tutorial</li>
+<li><a href="https://www.mysqltutorial.org/">MySQL Tutorial</a> - MySQL-Tutorial</li>
+<li><a href="https://hasura.io/learn/">Hasura</a> - GraphQL-Kurse</li>
+<li><a href="https://systemd-by-example.com/">systemd-by-example</a> - Systemd lernen</li>
+<li><a href="https://www.slip.so/">Slip</a> - Programmierkurse erstellen</li>
+</ul>
+<hr>
+<doc-anchor-target id="webentwicklung">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#webentwicklung">#</doc-anchor-trigger>
+        <span>Webentwicklung</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://developer.mozilla.org/">MDN</a></strong> oder <a href="https://joshjoshuap-webdevresources.vercel.app/">Web Dev Resources</a> - Web Dev Lernressourcen</li>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://github.com/andrew--r/channels">Frontend Developers</a></strong> oder <a href="https://rentry.co/cozqr">Web Dev / Programming YouTube Channels</a> - Web Dev YouTube Kanal-Indexe</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://www.freecodecamp.org/learn/the-odin-project/">Odin Project</a></strong>, <a href="https://www.theodinproject.com/">2</a> - Programmieren / Kurse / Interaktiv / <a href="https://discord.com/invite/fbFCkYabZB">Discord</a></li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://fullstackopen.com/en/">FullStackOpen</a></strong> - Full-Stack-Kurs</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://landchad.net/">LandChad</a></strong> oder <a href="https://learn.sadgrl.online/">learn.sadgrl.online</a> - Site-Entwicklung Leitfäden</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://learn.shayhowe.com/">Learn to Code HTML &amp; CSS</a></strong> - HTML/CSS-Kurs</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://javascript.info/">JavaScript.info</a></strong>, <a href="https://www.patterns.dev/">Patterns.dev</a> oder <a href="https://github.com/Asabeneh/30-Days-Of-JavaScript">30 Days Of JavaScript</a> - JavaScript-Lernseiten</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://messwithdns.net/">mess with dns</a></strong> - Mit DNS experimentieren</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://phptherightway.com/">PHP: The Right Way</a></strong>, <a href="https://odan.github.io/learn-php/">Learn PHP</a> oder <a href="https://www.phptutorial.net/">PHP Tutorial</a> - PHP lernen</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://www.markdownguide.org/">Markdown Guide</a></strong> - Leitfaden für Markdown (.md)</li>
+<li><a href="https://microsoft.github.io/Web-Dev-For-Beginners/">Web Dev for Beginners</a> - Web Dev Kurs</li>
+<li><a href="https://thegymnasium.com/">Aquent Gymnasium</a> - Web Dev Tutorials</li>
+<li><a href="https://dash.generalassemb.ly/">Dash</a> - Web Dev Kurse</li>
+<li><a href="https://andreasbm.github.io/web-skills/">Web Skills</a>, <a href="https://web.dev/learn">web.dev</a> oder <a href="https://www.encodedna.com/">Encodedna</a> - Web Dev Leitfäden</li>
+<li><a href="https://www.youtube.com/@Codevolution">Codevolution</a> - Web Dev Video-Lektionen</li>
+<li><a href="https://localfirstweb.dev/">Local-First Web</a> - Leitfaden zur lokalen Webentwicklung / <a href="https://discord.gg/lfwdev">Discord</a></li>
+<li><a href="https://svg-tutorial.com/">SVG Tutorial</a> - Lernen, wie man SVG-Bilder kodiert</li>
+<li><a href="https://htmldog.com/">HTMLDog</a> - HTML/CSS und JavaScript Tutorials</li>
+<li><a href="https://100dayscss.com/">100DayCSS</a>, <a href="https://css-challenges.com/">CSS Challenges</a> oder <a href="https://playcss.app/">PlayCSS</a> - CSS Herausforderungen</li>
+<li><a href="https://codepip.com/games/">Codepip</a>, <a href="https://cssgridgarden.com/">Grid Garden</a>, <a href="https://cssbattle.dev/">CSS Battle</a>, <a href="https://css-speedrun.netlify.app/">CSS Speedrun</a>, <a href="https://codingfantasy.com/">CodingFantasy</a> oder <a href="https://flukeout.github.io/">CSS Diner</a> - CSS Lernspiele</li>
+<li><a href="https://www.guess-css.app/">Guess CSS</a> - CSS Ratespiel</li>
+<li><a href="https://flexboxfroggy.com/">Flexbox Froggy</a>, <a href="http://www.flexboxdefense.com/">FlexboxDefense</a> oder <a href="https://knightsoftheflexboxtable.com/">KnightsoftheFlexboxTable</a> - CSS Flexbox Lernspiele</li>
+<li><a href="https://defensivecss.dev/">DefensiveCSS</a> - CSS Tipps</li>
+<li><a href="https://learncssgrid.com/">LearnCSSGrid</a> - CSS Grid Leitfaden</li>
+<li><a href="https://github.com/you-dont-need/You-Dont-Need-JavaScript">You Don&#x27;t Need JavaScript</a> - CSS Demos</li>
+<li><a href="https://css-animations.io/">css-animation</a> - CSS-Animations-Tutorial</li>
+<li><a href="https://github.com/getify/You-Dont-Know-JS">You Don&#x27;t Know JS</a> oder <a href="https://eloquentjavascript.net/">EloquentJavascript</a> - JavaScript Lernbücher</li>
+<li><a href="https://github.com/lydiahallie/javascript-questions">Javascript Questions</a> oder <a href="https://javascriptquiz.com/">JavaScriptQuiz</a> - JavaScript-Fragen zum Üben</li>
+<li><a href="https://github.com/leonardomso/33-js-concepts">33 JS Concepts</a> - Nützliche JavaScript-Konzepte</li>
+<li><a href="https://github.com/camsong/You-Dont-Need-jQuery">You-Dont-Need-jQuery</a> - JavaScript Query Style Events Leitfaden</li>
+<li><a href="https://github.com/airbnb/javascript">Airbnb JavaScript Style Guide</a> - JavaScript Style Guide</li>
+<li><a href="https://blog.javascripttoday.com/">Javascript Today</a> - JavaScript-Blog</li>
+<li><a href="https://alexnisnevich.github.io/untrusted/">Untrusted</a> - JavaScript Lernspiel</li>
+<li><a href="https://htmlhead.dev/">HEAD</a> - HTML head Element Leitfaden</li>
+<li><a href="https://domevents.dev/">DOM Events</a> - Lernen über DOM Events</li>
+<li><a href="https://github.com/fpereiro/backendlore">backendlore</a> - Backend-Coding-Leitfaden</li>
+<li><a href="https://github.com/CollabCodeTech/backend-challenges">backend-challenges</a> - Backend-Herausforderungen zum Üben</li>
+<li><a href="https://exploringjs.com/tackling-ts/toc.html">Tackling TS</a> oder <a href="https://basarat.gitbook.io/typescript/getting-started">TypeScript Deep Drive</a> - TypeScript Leitfäden</li>
+<li><a href="https://typehero.dev/">TypeHero</a> oder <a href="https://github.com/type-challenges/type-challenges">Type Challenges</a> - TypeScript Übungen / Herausforderungen</li>
+<li><a href="https://nextjs.org/learn">Learn Next.js</a> / <a href="https://frontendmasters.com/courses/production-next/">Production-Grade Next.js</a> / <a href="https://github.com/vercel/next.js/tree/canary/examples">Learn by Examples</a> - Next.js Lernressourcen</li>
+<li><a href="https://java-design-patterns.com/">Java Design Patterns</a> - Java Design Leitfaden</li>
+<li><a href="https://github.com/goldbergyoni/nodebestpractices">Node.js Best Practices</a> - Node.js Style Guide</li>
+<li><a href="https://dev.to/edge-and-node/the-complete-guide-to-full-stack-solana-development-with-react-anchor-rust-and-phantom-3291">Full Stack Solana Development Guide</a> - <a href="https://github.com/dabit3/complete-guide-to-full-stack-solana-development">Beispiele</a></li>
+<li><a href="https://stpg-tk.netlify.app/guides/">STPG</a> - Startpage-Erstellungsleitfäden / <a href="https://discord.com/invite/ExAGgVR">Discord</a></li>
+<li><a href="https://www.markdowntutorial.com/">Markdown Tutorial</a> - Interaktives Markdown-Tutorial</li>
+<li><a href="https://jgthms.com/web-design-in-4-minutes/">Web Design in 4 Minutes</a> oder <a href="https://www.strml.net/">Strml</a> - Interaktives Webdesign-Tutorial</li>
+<li><a href="https://mattdesl.github.io/workshop-webgl-glsl/">WebGL and GLSL Workshop</a> - Interaktives WebGL / GLSL Tutorial</li>
+<li><a href="https://learningseo.io/">LearningSEO</a> - SEO Leitfäden</li>
+<li><a href="https://discordjs.guide/">Discord.js Guide</a> oder <a href="https://anidiots.guide/">An Idiot&#x27;s Guide</a> - Discord.js Bot Leitfäden</li>
+<li>Comic-Lektionen - <a href="https://howdns.works/">DNS</a> / <a href="https://howdnssec.works/">DNSSEC</a> / <a href="https://howhttps.works/">HTTPS</a></li>
+</ul>
+<hr>
+<doc-anchor-target id="spieleentwicklung">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#spieleentwicklung">#</doc-anchor-trigger>
+        <span>Spieleentwicklung</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><a href="https://mboffin.itch.io/pico8-educational-toolset">PICO-8</a> - Grundlegende Spieleentwicklungskonzepte / <a href="https://www.pico-8-edu.com/">Webversion</a></li>
+<li><a href="https://www.youtube.com/c/SebastianLague/playlists?view=50&amp;sort=dd&amp;shelf_id=4">SebastianLague</a> - Spieleentwicklung Tutorials</li>
+<li><a href="https://demoman.net/?a=trig-for-games">Trig for Games</a> - Trigonometrie-Lektionen für Spiele</li>
+<li><a href="https://rpgmaps.profantasy.com/">ProFantasy</a> - Fantasy-Karten-Erstellung Tutorials</li>
+<li><a href="https://gamemath.com/book/intro.html">Game Math</a> - Mathematik-Lektionen für Spieleentwickler</li>
+<li><a href="https://chip-8.github.io/">CHIP-8 Research</a> - CHIP-8 Forschung</li>
+<li><a href="https://github.com/ekzhang/graphics-workshop">Graphics Workshop</a> - Computergrafik lernen</li>
+</ul>
+<hr>
+<doc-anchor-target id="app-entwicklung">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#app-entwicklung">#</doc-anchor-trigger>
+        <span>App-Entwicklung</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://github.com/josephgoksu/mobile-design-resources">Mobile Design Resources</a></strong> - App Design Lernressourcen</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://github.com/skydoves/android-developer-roadmap">Android Developer Roadmap</a></strong></li>
+<li><a href="https://developer.android.com/courses">Official Android Courses</a> oder <a href="https://learn.microsoft.com/en-us/windows/apps/">Windows App Development</a> - App Dev Kurse</li>
+<li><a href="https://www.learncs.online/lessons">LearnCS</a> - Java/Kotlin lernen</li>
+<li><a href="https://developer.apple.com/tutorials/swiftui">Swift Playgrounds</a> - Swift UI lernen / <a href="https://developer.apple.com/tutorials/sample-apps">Beispiele</a></li>
+<li><a href="https://github.com/neil-wu/SwiftDump">SwiftDump</a> - Swift-Objektinformationen aus Mach-O-Datei abrufen</li>
+<li><a href="https://github.com/vandadnp/flutter-tips-and-tricks">Flutter Tips and Tricks</a> - Flutter Tipps und Tricks</li>
+</ul>
+<hr>
+<doc-anchor-target id="datenstrukturen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#datenstrukturen">#</doc-anchor-trigger>
+        <span>Datenstrukturen</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://leetcode.com/">Leetcode</a></strong> - Codierpraxis</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong>Leetcode Tools</strong> - <a href="https://walkccc.me/LeetCode/">Lösungen</a>, <a href="https://leetcode.ca/">2</a> / <a href="https://github.com/MysteryVaibhav/leetcode_company_wise_questions">Unternehmensfragen</a>, <a href="https://docs.google.com/document/d/1icaNSRq6XcWO3EOycEP9F9P8SLerBanpY3Ni_ZzCfFA/edit">2</a> / <a href="https://github.com/MisterBooo/LeetcodeAnimation">Animationen</a> / <a href="https://github.com/fspv/leetcode-anki">Anki-Karten</a> / <a href="https://github.com/fishercoder1534/Leetcode">Videos</a></li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://neetcode.io/">NeetCode</a></strong> - Codier-Interviewpraxis</li>
+<li><a href="https://prashantbarahi.com.np/docs/algorithms/intro">algorithms</a> - Code-Algorithmen &amp; Datenstrukturen Tutorials</li>
+<li><a href="https://visualgo.net/">VisualGo</a> - Datenstrukturen &amp; Algorithmus-Animationen</li>
+<li><a href="https://thealgorithms.github.io/C-Plus-Plus">The Algorithms - C++</a> - C++-Algorithmen</li>
+<li><a href="https://github.com/MaciejWas/algonds">algonds</a> - Codierpraxis</li>
+<li><a href="https://app.codility.com/programmers/">Codility</a> - Codierpraxis</li>
+<li><a href="https://projectlearn.io/">ProjectLearn</a> - Codierpraxis</li>
+<li><a href="https://www.lintcode.com/">LintCode</a> oder <a href="https://www.codewars.com/">CodeWars</a> - Codierpraxis</li>
+<li><a href="https://platform.stratascratch.com/coding">Coding Questions</a> - Codier-Interviewfragen</li>
+<li><a href="https://devpost.com/">DevPost</a>, <a href="https://www.hackerearth.com/challenges/">HackTheEarth</a>, <a href="https://emkc.org/challenges">EMKC</a>, <a href="https://atcoder.jp/">AtCoder</a> oder <a href="https://toph.co/">Toph.co</a> - Hackathon / Challenge Communities</li>
+<li><a href="https://github.com/MTrajK/coding-problems">Coding Problems</a> - Codierprobleme / Lösungen</li>
+<li><a href="https://exercism.org/">Exercism</a>, <a href="https://www.hackerrank.com/">HackerRank</a> oder <a href="https://cscircles.cemc.uwaterloo.ca/">CS Circles</a> - Programmierunterricht</li>
+<li><a href="https://cses.fi/problemset/">CSES Problemset</a> - Sammlung von algorithmischen Programmierproblemen</li>
+</ul>
+<hr>
+<doc-anchor-target id="data-science">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#data-science">#</doc-anchor-trigger>
+        <span>Data Science</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><a href="https://365datascience.com/">365Datascience</a> - Data Science Kurse</li>
+<li><a href="https://www.statmethods.net/index.html">Quick-R</a> - R Tutorials</li>
+<li><a href="https://adv-r.hadley.nz/">Advanced R</a> - R Leitfaden / <a href="https://advanced-r-solutions.rbind.io/">Lösungen</a></li>
+<li><a href="https://r-pkgs.org/">R Packages</a> - R Packages Leitfaden</li>
+<li><a href="https://r4ds.had.co.nz/">R for Data Science</a> - R Data Science Leitfaden</li>
+<li><a href="https://ggplot2-book.org/index.html">ggplot2: Elegant Graphics for Data Analysis</a> - ggplot2 Leitfaden</li>
+<li><a href="https://github.com/donnemartin/data-science-ipython-notebooks">Data Science Ipython Notebooks</a>, <a href="https://lectures.scientific-python.org/">Scipy Lectures</a> oder <a href="https://virgili0.github.io/Virgilio/">Virgilio</a> / <a href="https://github.com/virgili0/Virgilio">GitHub</a> - DataScience lernen</li>
+<li><a href="https://github.com/DataTalksClub/data-engineering-zoomcamp">Data Engineering Zoomcamp</a> - Data Engineering Kurs</li>
+<li><a href="https://github.com/danielbeach/data-engineering-practice">Data Engineering Practice Problems</a> - Data Engineering Praxis</li>
+<li><a href="https://github.com/kubowania/netflix-clone-graphql-datastax">Learn to Make Netflix Clone</a></li>
+</ul>
+<hr>
+<doc-anchor-target id="python">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#python">#</doc-anchor-trigger>
+        <span>Python</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://pythondiscord.com/resources/">Python Discord</a></strong>, <a href="https://github.com/Tanu-N-Prabhu/Python">Python Programming Hub</a> oder <a href="https://github.com/rasbt/python_reference">Python Reference</a> - Python Lernressourcen</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://automatetheboringstuff.com/">Automate The Boring Stuff</a></strong> - Python-Automationsbuch</li>
+<li><a href="https://github.com/Asabeneh/30-Days-Of-Python">30 Days Of Python</a> - Python Leitfaden</li>
+<li><a href="https://community.uuki.live/course/tdb3Vsl1/python-course/aitutor">Python AI</a> - AI-Python-Tutor</li>
+<li><a href="https://codingbat.com/">CodingBat</a> oder <a href="https://chromewebstore.google.com/detail/pyquickie/okpdnfgpbpifbncoleieajiblmebbkci">PyQuickie</a> - Python / Java Praxis</li>
+<li><a href="https://py4e.com/">Python4Everyone</a>, <a href="https://python.swaroopch.com/">A Byte of Python</a>, <a href="https://cjolowicz.github.io/posts/hypermodern-python-01-setup/">Hypermodern Python</a>, <a href="https://www.datacamp.com/">DataCamp</a>, <a href="https://www.learnpython.org/">Learn Python</a>, <a href="https://github.com/trekhleb/learn-python">Learn-Python</a> oder <a href="https://github.com/zotroneneis/magical_universe">Magical Universe</a> - Python lernen</li>
+<li><a href="https://www.youtube.com/@amigoscode">AmigosCode</a> - Python/Kotlin/Java Tutorials</li>
+<li><a href="https://github.com/mynameisfiber/high_performance_python">High Performance Python: The Code</a> - Python Lektionen</li>
+<li><a href="https://realpython.com/">Real Python</a>, <a href="https://reeborg.ca/docs/en/">Reeborg</a> oder <a href="https://www.askpython.com/">AskPython</a> - Python Tutorials</li>
+<li><a href="https://futurecoder.io/">FutureCoder</a>, <a href="https://cs50.harvard.edu/python/">CS50</a>, <a href="https://github.com/dabeaz-course/python-mastery">python-mastery</a>, <a href="https://youtu.be/XKHEtdqhLK8">Python Full Course</a> oder <a href="https://www.brianheinold.net/python/python_book.html">A Practical Introduction to Python</a> - Python Kurse</li>
+<li><a href="https://rentry.co/FMHYBase64#modern-python-3-bootcamp-courses">Modern Python 3 Bootcamp Courses</a></li>
+<li><a href="https://greenteapress.com/wp">Tea Press</a> - Python Lernbuch</li>
+<li><a href="https://github.com/coodict/python3-in-one-pic">python3-in-one-pic</a> - Python Lernbild</li>
+<li><a href="https://memlayout.com/">memlayout</a> - Python Code-Visualisierung</li>
+</ul>
+<hr>
+<doc-anchor-target id="c--c">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#c--c">#</doc-anchor-trigger>
+        <span>C / C++</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><a href="https://www.learn-c.org/">Learn C</a> - C Tutorial</li>
+<li><a href="https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines">C++ Core Guidelines</a> - C++ Best Practices Leitfäden / <a href="https://github.com/isocpp/CppCoreGuidelines">Github</a></li>
+<li><a href="https://github.com/federico-busato/Modern-CPP-Programming">Modern C++ Programming</a> - Moderner C++ Kurs</li>
+<li><a href="https://www.learncpp.com/">Learn C++</a> - C++ lernen</li>
+<li><a href="https://salmer.github.io/CppDeveloperRoadmap/">CppDeveloperRoadmap</a> - C++ lernen</li>
+<li><a href="https://www.studyplan.dev/">StudyPlan</a> - C++ lernen</li>
+<li><a href="https://howistart.org/posts/cpp/1/">HowIStart C++</a> - C++ Setup-Leitfaden</li>
+<li><a href="https://github.com/rachitiitr/modern-cpp-tricks">modern-cpp-tricks</a> - C++ Tipps</li>
+<li><a href="https://makefiletutorial.com/">Makefile Tutorial</a> - Makefile Tutorial</li>
+</ul>
+<hr>
+<doc-anchor-target id="cybersicherheit">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cybersicherheit">#</doc-anchor-trigger>
+        <span>Cybersicherheit</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://github.com/gerryguy311/Free_CyberSecurity_Professional_Development_Resources">Free Cyber Resources</a></strong> oder <a href="https://www.nist.gov/itl/applied-cybersecurity/nice/resources/online-learning-content">Applied Cybersecurity</a> - Cybersicherheits-Lernressourcen</li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_pentesting_resources">Pentesting Resources</a></strong></li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://crackmes.one/">crackmes.one</a></strong> / <a href="https://discord.com/invite/2pPV3yq">Discord</a>, <a href="https://www.hacker101.com/">Hackers101</a>, <a href="https://echoctf.red/">EchoCTF</a>, <a href="https://smashthestack.org/">SmashTheStack</a>, <a href="https://webhacking.kr/">WebHacking</a> oder <a href="https://defendtheweb.net/">DefendTheWeb</a> - Cybersicherheits-Herausforderungen</li>
+<li><a href="https://cyberarsenal.org/">CyberArsenal</a> - Cybersicherheits-Foren</li>
+<li><a href="https://twitter.com/TheSecMaster1">TheSecMaster</a> - Cybersicherheits-Twitter</li>
+<li><a href="https://skillsforall.com/">Skills for All</a> oder <a href="https://github.com/farhanashrafdev/90DaysOfCyberSecurity">90DaysOfCyberSecurity</a> - Cybersicherheitskurse</li>
+<li><a href="https://picoctf.org/">picoCTF</a>, <a href="https://tryhackme.com/">TryHackMe</a>, <a href="https://jaimelightfoot.com/blog/so-you-want-to-ctf-a-beginners-guide/">CTF Guide</a>, <a href="https://ctflearn.com/">CTFLearn</a>, <a href="https://www.hackthebox.com/">Hack The Box</a> oder <a href="https://opensecuritytraining.info/">OpenSecurityTraining2</a> - Cybersicherheits-Lektionen</li>
+<li><a href="https://cybertalentskids.com/">Cyber Talent Kids</a> oder <a href="https://teachyourselfinfosec.com/">Teach Yourself Info Sec</a> - Über Cybersicherheit lernen</li>
+<li><a href="https://pwn.college/">pwn.college</a> - Cybersicherheits-Praxis</li>
+<li><a href="https://overthewire.org/wargames/">OverTheWire</a> - Cybersicherheits-Lernspiel</li>
+<li><a href="https://www.ired.team/">iRed</a> - Red Teaming und offensive Sicherheit</li>
+<li><a href="https://www.hacksplaining.com/">Hacksplaining</a> - Entwicklersicherheit-Lektionen</li>
+<li><a href="https://microcorruption.com/">MicroCorruption</a> - Reverse Engineering / Cybersicherheit lernen</li>
+<li><a href="https://github.com/oconnor663/sha256_project">sha256_project</a> oder <a href="https://cryptohack.org/">cryptohack</a> - Kryptographie lernen</li>
+<li><a href="https://www.youtube.com/@_JohnHammond">John Hammond</a> oder <a href="https://www.youtube.com/@LowLevelLearning/">LowLevelLearning</a> - Cybersicherheits-YouTube-Tutorials</li>
+</ul>
+<hr>
+<doc-anchor-target id="linux--cli">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#linux--cli">#</doc-anchor-trigger>
+        <span>Linux / CLI</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><a href="https://www.openvim.com/">OpenVim</a> - Interaktives Vim-Tutorial</li>
+<li><a href="https://vim-adventures.com/">Vim Adventures</a> - Vim Lernspiel</li>
+<li><a href="https://github.com/wincent/vim-university">Vim University</a> - Vim Tipps</li>
+<li><a href="https://www.kernel.org/doc/html/latest/">The Linux Kernel</a> - Linux-Kernel-Entwicklungsleitfäden / <a href="https://kernel.org/">Archive</a></li>
+<li><a href="https://apps.gnome.org/Workbench">Workbench</a> / <a href="https://github.com/workbenchdev/Workbench">GitHub</a> - Lernen / Experimentieren mit Gnome</li>
+</ul>
+<hr>
+<doc-anchor-target id="git">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#git">#</doc-anchor-trigger>
+        <span>Git</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><a href="https://docs.github.com/en">GitHub Docs</a> - GitHub Hilfe-Dokumentation</li>
+<li><a href="https://4geeksacademy.github.io/git-interactive-tutorial/">Git Tutorial</a> - Interaktives Git-Tutorial</li>
+<li><a href="https://ohmygit.org/">Oh My Git!</a>, <a href="https://ohshitgit.com/">2</a> - Git Lernspiel</li>
+<li><a href="https://github.com/jlord/git-it-electron">Git-it</a> - Git Desktop Lern-App</li>
+<li><a href="https://github.com/vishal2376/git-coach">Git Coach</a> - Git Android Lern-App</li>
+<li><a href="https://git.bradwoods.io/">Git Time</a> - Git Version Control System Lernspiel</li>
+<li><a href="https://www.firsttimersonly.com/">First Timers Only</a> oder <a href="https://firstcontributions.github.io/">First Contributions</a> - Git Code-Beitragsleitfäden</li>
+<li><a href="https://learngitbranching.js.org/">Learn Git Branching</a> - Interaktiver Git Branching Leitfaden</li>
+</ul>
+<hr>
+<doc-anchor-target id="ui--ux">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ui--ux">#</doc-anchor-trigger>
+        <span>UI / UX</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><a href="https://www.designer.tips/">design.tips</a> oder <a href="https://utopia.fyi/">Utopia</a> - Design Tipps</li>
+<li><a href="https://hackdesign.org/">HackDesign</a> oder <a href="https://github.com/josephgoksu/sky-design">Sky Design</a> - UI / Webdesign Kurse</li>
+<li><a href="https://learnui.design/">Learn UI Design</a> - UI Design Kurs</li>
+<li><a href="https://fifty.user-interface.io/50_ui_tips.pdf">50 UI Tips</a> - UI Design Buch</li>
+<li><a href="https://cantunsee.space/">Can&#x27;t Unsee</a> - UI Design Test</li>
+<li><a href="https://uxtools.co/">UXTools</a> oder <a href="https://uxmovement.com/">UXMovement</a> - UX Design lernen</li>
+<li><a href="https://www.sitepoint.com/">SitePoint</a> - UX Design Kurse &amp; Bücher</li>
+<li><a href="https://codeberg.org/teaserbot-labs/delightful-humane-design">delightful humane design</a> - Humane Design Ressourcen</li>
+<li><a href="https://lawsofux.com/">Laws of UX</a> - Maximen / Prinzipien für UI-Designer</li>
+<li><a href="https://www.deceptive.design/">Deceptive Patterns</a> - Täuschende Benutzererfahrung-Beispiele</li>
+<li><a href="https://uicoach.io/">UI Coach</a> - UI Design Herausforderungsgenerator</li>
+<li><a href="https://htmldog.com/">HTML Dog</a> - Front-End Tutorials &amp; Beispiele</li>
+<li><a href="https://www.frontendmentor.io/">FrontEndMentor</a>, <a href="https://phuoc.ng/">Phuoc</a> oder <a href="https://github.com/felipefialho/frontend-challenges">Frontend Challenges</a> - Frontend Design Herausforderungen</li>
+<li><a href="https://github.com/sadanandpai/frontend-learning-kit">Frontend Learning Kit</a> - Frontend-Lernindex</li>
+<li><a href="https://microsoft.github.io/frontend-bootcamp/">Frontend Bootcamp</a> - Frontend-Workshop</li>
+<li><a href="https://bitsofco.de/">BitsOfCode</a> - Frontend Dev Artikel</li>
+<li><a href="https://gaultier.github.io/blog/x11_x64.html">Gaultier Blog</a> - x86-64-Assembly lernen</li>
+<li><a href="https://github.com/kamranahmedse/design-patterns-for-humans">Design Pattern for Humans</a> - Leitfaden zu Designmustern</li>
+</ul>
+<hr>
+<doc-anchor-target id="informatik">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#informatik">#</doc-anchor-trigger>
+        <span>Informatik</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://www.compscilib.com/">CompSciLib</a></strong> - Informatik-Tools</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://teachyourselfcs.com/">TeachYourselfComputerScience</a></strong> - Informatik-Buchempfehlungen</li>
+<li><a href="https://www.bigocheatsheet.com/">Big-O Cheatsheet</a> - Informatik-Komplexitäten-Cheatsheet</li>
+<li><a href="https://csdiy.wiki/en/">CSDIY</a> oder <a href="https://learnaifromscratch.github.io/">LearnAIFromScratch</a> - Informatik-Lernleitfäden</li>
+<li><a href="https://code.org/">Code.org</a> - Informatik-Kurse</li>
+<li><a href="https://github.com/Developer-Y/cs-video-courses">cs-video-courses</a> - Informatik-Kurse</li>
+<li><a href="https://github.com/ossu/computer-science">Open Source Society University</a> - Informatik-Kurse / <a href="https://github.com/ossu">GitHub</a> / <a href="https://discord.gg/wuytwK5s9h">Discord</a></li>
+<li><a href="https://functionalcs.github.io/curriculum/">Modern Computer Science Curriculum</a> - Informatik-Kurse</li>
+<li><a href="https://cs50.harvard.edu/x/">CS50</a> - Harvard Informatikkurs</li>
+<li><a href="https://collegecompendium.org/">CollegeComendium</a> - Informatik-Kurse</li>
+<li><a href="https://www.youtube.com/@Computerphile/">Computerphile</a> oder <a href="https://www.youtube.com/@CSDojo">CSDojo</a> - Informatik-YouTube-Kanäle</li>
+<li><a href="https://www.apress.com/us/apress-open/apressopen-titles">ApressOpen</a> - Informatik-Bücher</li>
+<li><a href="https://paperswelove.org/">Papers We Love</a> - Informatik-Forschungspapiere</li>
+<li><a href="https://nandgame.com/">NandGame</a> - Computerbaupuzzle</li>
+<li><a href="https://www.nand2tetris.org/course">From Nand To Tetris</a> - Computerbau-Lektion</li>
+<li><a href="https://www.copetti.org/">Copetti</a> - Detaillierte Konsolenarchitekturanalyse / <a href="https://github.com/flipacholas/Architecture-of-consoles">GitHub</a></li>
+<li><a href="https://browser.engineering/">Web Browser Engineering</a> - Lernen über Browser-Engineering</li>
+<li><a href="https://cpu.land/">CPU Land</a> - Was passiert, wenn man Programme ausführt</li>
+<li><a href="https://github.com/riti2409/Resources-for-preparation-Of-Placements">Computer Science Lecture Links</a></li>
+</ul>
+<hr>
+<doc-anchor-target id="web-dev-tools">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#web-dev-tools">#</doc-anchor-trigger>
+        <span>Web Dev Tools</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://myles.github.io/awesome-static-generators/">Awesome Static Generators</a></strong> - Ressourcen für statische Seiten</li>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://github.com/ziadoz/awesome-php">Awesome PHP</a></strong> - PHP-Ressourcen</li>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://github.com/anderspitman/awesome-tunneling">Awesome Tunneling</a></strong> - Tunneling-Ressourcen</li>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://github.com/Puliczek/awesome-list-of-secrets-in-environment-variables">Awesome list of secrets in environment variables</a></strong> - Geheimnisse in Umgebungsvariablen</li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_website_creators">Website Creators</a></strong></li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_app_.2F_site_mockups">Site Mockups</a></strong></li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_web_archiving">Archive / Scrape / Crawl Webpages</a></strong></li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://ray.st/">Ray.st</a></strong> oder <a href="https://www.wappalyzer.com/">Wappalyzer</a> - Technologien auf Websites identifizieren / <a href="https://www.wappalyzer.com/apps/">Addons</a></li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://emulatorjs.org/">EmulatorJS</a></strong> - Emulatoren auf Websites einbetten</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://goaccess.io/">GoAccess</a></strong> - Web-Log-Analyzer / <a href="https://github.com/allinurl/goaccess">GitHub</a></li>
+<li><a href="https://www.websiteplanet.com/webtools/">Website Planet Tools</a>, <a href="https://www.danstools.com/">Dan&#x27;s Tools</a>, <a href="https://webdesign-assistant.com/">Webdesign Assistant</a>, <a href="https://www.xwebtools.com/">xWebTools</a>, <a href="https://tiny-helpers.dev/">Tiny Helpers</a>, <a href="https://www.browserling.com/tools/">Browserling Tools</a>, <a href="https://webcode.tools/">WebCode</a>, <a href="https://toolcool.org/">ToolCool</a> oder <a href="https://cssauthor.com/">CSSAuthor</a> - Werkzeuge zur Website-Entwicklung</li>
+<li><a href="https://getgrav.org/">Grav</a> - Flat-File CMS</li>
+<li><a href="https://www.runonflux.io/">Flux</a> - Dezentralisierte Cloud-Infrastruktur</li>
+<li><a href="http://jstrieb.github.io/urlpages">URLPages</a> / <a href="https://github.com/jstrieb/urlpages">GitHub</a> - Ganze Seiten in URLs speichern</li>
+<li><a href="https://shoelace.style/">Shoelace</a>, <a href="https://www.fast.design/">Fast</a> oder <a href="https://component.kitchen/elix">Elix</a> - Webkomponentenbibliotheken</li>
+<li><a href="https://github.com/rsc/web">Package Web</a> - Framework zum Bereitstellen von Grundseiten</li>
+<li><a href="https://chromewebstore.google.com/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm">Web Developer</a> - Web Developer Toolbar Erweiterung</li>
+<li><a href="https://aptabase.com/">Aptabase</a>, <a href="https://www.goatcounter.com/">GoatCounter</a> oder <a href="https://nibbler.insites.com/">Nibbler</a> - Site-Analytics</li>
+<li><a href="https://github.com/goenning/google-indexing-script">google-indexing-script</a> - Google-Indexierungs-Skript</li>
+<li><a href="https://www.elastic.co/products/elasticsearch">ElasticSearch</a> / <a href="https://github.com/elastic/elasticsearch">GitHub</a> - Such- &amp; Analyse-Engine</li>
+<li><a href="https://serpreviewtool.com/">SerPreview</a> - Site-Suchergebnisse</li>
+<li><a href="https://developers.google.com/search/docs/appearance/structured-data">Schema Markup Testing Tools</a> - Google-Ergebnisse von Sites testen</li>
+<li><a href="https://support.google.com/webmasters/answer/6062598">Robots.txt Tester</a> - Deine robots.txt testen</li>
+<li><a href="https://www.charlesproxy.com/download/previous-release/">Charles 3</a> / <a href="https://rentry.co/FMHYBase64#charles-activate">Aktivierung</a> oder <a href="https://proxyman.io/">ProxyMan</a> - Web-Debugging-Proxy-Apps</li>
+<li><a href="https://corsproxy.github.io/">CORS Proxy</a> - Kostenloser CORS-Proxy</li>
+<li><a href="https://tabler.io/">Tabler</a> - Site-Admin-Dashboard</li>
+<li><a href="https://octopus.do/sitemap">Octopus</a> - Site-Planungstool</li>
+<li><a href="https://browserdefaultstyles.com/">Browser Default Styles</a> - Standard-Browser-Stil-Suche</li>
+<li><a href="https://utom.design/measure">Utom Design</a> - Sketch Measure</li>
+<li><a href="https://wireflow.co/">WireFlow</a> - Flussprototypen-Ersteller</li>
+<li><a href="https://lenis.studiofreight.com/">Lenis</a> - Smooth-Scroll-Bibliothek</li>
+<li><a href="https://opensource.guide/">Open Source Guides</a> - Tipps zu Open-Source-Software / <a href="https://github.com/github/opensource.guide">GitHub</a></li>
+<li><a href="https://sslmate.com/caa/">SSLMate CAA</a> - CAA Record Helfer</li>
+<li><a href="http://free-website-translation.com/">free-website-translation</a>, <a href="http://transdict.com/meta/website.html">transdict</a> oder <a href="https://www.conveythis.com/">conveythis</a> - Website-Übersetzer</li>
+<li><a href="https://statically.io/">Statically</a> - Websites schneller laden</li>
+<li><a href="https://qdrant.tech/">Qdrant</a> - Vektordatenbank</li>
+<li><a href="https://resttesttest.com/">Rest Test Test</a> - REST / CORS-Dienste testen</li>
+<li><a href="https://webui.me/">WebUI</a> - WebUI-Bibliotheken in Projekte einbetten</li>
+<li><a href="https://dagu.readthedocs.io">Dagu</a> / <a href="https://github.com/dagu-dev/dagu">GitHub</a> - WebUI-Job-Manager</li>
+<li><a href="https://httpbin.org/">httpbin</a> oder <a href="https://pipedream.com/requestbin">Requestbin</a> - HTTP-Anfrage- &amp; Antwortdienst</li>
+<li><a href="https://github.com/ory/hydra">Hydra</a> - OAuth 2.0-Server / OpenID-Connect-Anbieter</li>
+<li><a href="https://github.com/megaease/easegress">Easegress</a> - Traffic-Orchestrierungssystem</li>
+<li><a href="https://hits.seeyoufarm.com/">HITS</a> - Website-Traffic-Badges</li>
+<li><a href="https://partytown.builder.io">Partytown</a> / <a href="https://github.com/BuilderIO/partytown">GitHub</a> - Skripte in Web-Worker verlagern</li>
+<li><a href="https://tempesta-tech.com/">Tempesta FW</a> - DDoS / Webangriffs-Schutz</li>
+<li><a href="https://shisho.dev/">Shisho</a> - Sicherheitspatcher für Infrastruktur-Code</li>
+<li><a href="https://dnsdumpster.com/">DNSDumpster</a>, <a href="https://dnswatch.info">DNS Watch</a> oder <a href="https://whatsmydns.net/">WhatsMyDNS</a> - DNS-Abfrage / Sicherheit</li>
+<li><a href="https://github.com/six-ddc/plow">Plow</a> - HTTP-Benchmarking</li>
+<li><a href="https://ip6.nl/">IPv6 Leak Test</a>, <a href="https://test-ipv6.com/">Test-IPv6</a> oder <a href="https://ipv6-test.com/">IPv6 Test</a> - IPV6-Test</li>
+<li><a href="https://www.itechguides.com/disable-ipv6-windows-10/">How To Turn off IPv6</a> - IPv6-Lecks verhindern</li>
+<li><a href="https://flounder.online/">Flounder</a> - Gemini-Website-Ersteller</li>
+<li><a href="https://transform.tools/">Transform</a> - Polyglot-Web-Konverter</li>
+<li><a href="https://www.framer.com/">Framer</a> - Interaktives Site / App Design Tool</li>
+<li><a href="https://visbug.web.app">ProjectVisBug</a> / <a href="https://github.com/GoogleChromeLabs/ProjectVisBug">GitHub</a> - Webseiten-Editor</li>
+<li><a href="https://brython.info/">Brython</a> - Python 3 Web-Skriptsprache</li>
+<li><a href="https://builtwith.com/">BuiltWith</a> - Herausfinden, womit Sites erstellt sind</li>
+<li><a href="https://auz.github.io/Bug/">Bug</a> - Krabbelnde Bugs zu Website hinzufügen</li>
+<li><a href="https://onelineplayer.com/">OneLinePlayer</a> - Vimeo / Dropbox-Video-Player</li>
+<li><a href="https://www.scmplayer.net/">SCM Music Player</a>, <a href="https://webamp.org/">WebAMP</a>, <a href="https://saint-images.github.io/player.html">cassette-yt</a> oder <a href="https://webdeckplayer.neocities.org/">webdeckplayer</a> - Site-Audio / Musik-Player</li>
+<li><a href="https://www.streamdefence.com/">Stream Defence</a> - Website-Video-Backup-System</li>
+<li><a href="https://www.mapbox.com/">MapBox</a> oder <a href="https://leafletjs.com/">leafletjs</a> - Live-Karten, Standortsuche &amp; mehr</li>
+<li><a href="https://openmobilemaps.io/">Maps-Core</a> - Mobile Map SDK</li>
+<li><a href="https://kontactr.com/">Kontactr</a>, <a href="https://tally.so/">Tally</a>, <a href="https://www.jotform.com/">JotForm</a>, <a href="https://www.99inbound.com/">99Inbound</a>, <a href="https://forms.id/">Forms.id</a> oder <a href="https://form.taxi/">Form.taxi</a> - Formularersteller</li>
+<li><a href="https://uiball.com/ldrs/">LDRS</a> - Ladeanimationen</li>
+<li><a href="https://loading.io/">Loading.io</a> - Anpassbare Lade-SVG</li>
+<li><a href="https://medusajs.com">Medusa</a> - Digital Commerce Entwicklungswerkzeug</li>
+<li><a href="https://playwright.dev/">PlayWright</a> oder <a href="https://github.com/lavague-ai/LaVague">LaVague</a> - Web-Automatisierung</li>
+<li><a href="https://caniuse.com/">Can I Use?</a> - Browser-Support-Tabellen</li>
+<li><a href="https://appwrite.io/">Appwrite</a> oder <a href="https://www.shuttle.rs/">Shuttle</a> - Open-Source-Backend-Plattformen</li>
+<li><a href="http://www.squid-cache.org/">squid</a> - Caching-Proxy / <a href="https://squid.diladele.com/">MSI Installer</a></li>
+<li><a href="https://checkforcloudflare.selesti.com/">Check for Cloudflare</a> - Sites auf Cloudflare überprüfen</li>
+<li><a href="https://github.com/MortezaBashsiz/CFScanner/">CFScanner</a>, <a href="https://ircfspace.github.io/scanner/">scanner</a> oder <a href="https://github.com/vfarid/cf-ip-scanner-py">cf-ip-scanner-py</a> - Cloudflare-IP-Scanner</li>
+<li><a href="https://github.com/xianshenglu/cloudflare-ip-tester-app/">cloudflare-ip-tester-app</a> - Cloudflare-IP-Tester</li>
+<li><a href="https://console.watch/">console.watch</a> - Remote-Console-Polyfill für Cloudflare-Workers</li>
+<li><a href="https://github.com/cloudflare/cloudflared">Cloudflared</a> - Cloudflare Tunnel-Client</li>
+<li><a href="https://www.lighttpd.net/">LightTPD</a> oder <a href="https://caddyserver.com/">Caddy</a> - Webserver</li>
+<li><a href="https://github.com/dzove855/Bash-web-server">Bash-web-server</a> - Bash-Webserver</li>
+<li><a href="https://www.oracle.com/cloud/free/">Oracle</a> - Kostenlose Server-Tools</li>
+<li><a href="https://github.com/http-party/http-server">http-server</a> - Kein Konfigurations-HTTP-Server</li>
+<li><a href="https://httpd.apache.org/">Apache</a> - HTTP-Server</li>
+<li><a href="https://larsjung.de/h5ai/">h5ai</a> - HTTP-Webserver-Index / <a href="https://github.com/lrsjng/h5ai">GitHub</a></li>
+<li><a href="https://webri.ng/">webri.ng</a> - Webring-Host / <a href="https://github.com/webri-ng/webri.ng">GitHub</a></li>
+<li><a href="https://garlic.garden/onionring/">onionring.js</a> - Webring-Skript</li>
+<li><a href="https://brisray.com/web/webring-list.htm">Webring List</a> - Webring-Verzeichnis</li>
+<li><a href="https://syagent.com/">SyAgent</a>, <a href="https://github.com/ta-vivo/ta-vivo">TA Vivo</a> oder <a href="https://hertzbeat.com/">HertzBeat</a> - Server-Monitore</li>
+<li><a href="https://bawkbox.com/">BawkBox</a> - Website-Widgets</li>
+<li><a href="https://apexcharts.com/">ApexCharts</a> - Diagramme zur Site hinzufügen</li>
+<li><a href="https://github.com/librecaptcha/lc-core">LibreCaptcha</a> oder <a href="https://mcaptcha.org/">mCaptcha</a> - Captcha-Systeme</li>
+<li><a href="https://democaptcha.com/demo-form-eng/hcaptcha.html">Democaptcha</a> oder <a href="https://www.google.com/recaptcha/api2/demo">ReCAPTCHA Demo</a> / <a href="https://patrickhlauke.github.io/recaptcha/">GitHub</a> - Captcha-Demos</li>
+<li><a href="https://supertokens.com/">SuperTokens</a> oder <a href="https://lucia-auth.com/">Lucia</a> - Benutzer-Authentifizierung</li>
+<li><a href="https://sso.tax/">The SSO Wall of Shame</a> - Anbieter ohne integriertes SSO</li>
+<li><a href="https://www.remarkbox.com/">Remarkbox</a> oder <a href="https://www.htmlcommentbox.com/">HTML Comment Box</a> - Site-Kommentarsysteme</li>
+<li><a href="https://github.com/awslabs/aws-automated-incident-response-and-forensics">Automated Incident Response</a> - Automatisierter Vorfall- und Forensik-Rahmen</li>
+<li><a href="https://www.cbox.ws/">CBox</a>, <a href="https://typebot.io/">Typebot</a> oder <a href="https://www.tawk.to/">Tawk</a> - Eingebettete Chat-App</li>
+<li><a href="https://pay2.email/">Pay 2 Email</a> - Einfaches Website-Kontaktformular</li>
+<li><a href="https://twitcker.com/">Twitcker</a> - Twitter-Feed-Ticker zur Site hinzufügen</li>
+<li><a href="https://curator.io/">Curator</a> - Soziale-Medien-Feeds einbetten</li>
+<li><a href="https://min.io/">MinIO</a> oder <a href="https://filebase.com/">Filebase</a> - Cloud-nativer Objektspeicher</li>
+<li><a href="https://traefik.io/">Traefik</a> - Cloud-nativer Stack</li>
+<li><a href="https://aws.amazon.com/s3">Amazon S3</a> - Cloud-Objektspeicher Amazon Simple Service Storage / <a href="https://s3browser.com/">Desktop</a></li>
+<li><a href="https://github.com/upgundecha/howtheyaws">howtheyaws</a> - Liste, wie Organisationen AWS nutzen</li>
+<li><a href="https://quickemailverification.com/">QuickEmailVerification</a>, <a href="https://www.emailmarker.com/">Email Marker</a> oder <a href="https://www.zerobounce.net/">ZeroBounce</a> - E-Mail-Verifizierungsdienst</li>
+<li><a href="https://improvmx.com/">Improvemx</a> - Domain-E-Mail-Weiterleitung</li>
+<li><a href="https://docs.postalserver.io/">Postal</a> - Mail-Zustellplattform</li>
+<li><a href="https://microlink.io/sdk">Microlink SDK</a> / <a href="https://github.com/microlinkhq/sdk">GitHub</a>, <a href="https://winhtaikaung.github.io/react-tiny-link/">React Tiny Link</a> / <a href="https://github.com/winhtaikaung/react-tiny-link">GitHub</a> oder <a href="https://github.com/OP-Engineering/link-preview-js">Link Preview JS</a> - Linkvorschauen erstellen</li>
+<li><a href="https://www.v2fly.org/">V2Ray</a> - Proxy-Software</li>
+<li><a href="https://mitmproxy.org/">mitmproxy</a> / <a href="https://github.com/mitmproxy/mitmproxy">GitHub</a> - HTTPS-Verkehr analysieren und ändern</li>
+<li><a href="https://traefik.io/traefik/">Traefik</a>, <a href="https://github.com/fatedier/frp">frp</a> oder <a href="https://github.com/microsoft/reverse-proxy">reverse-proxy</a> - Reverse-Proxies</li>
+<li><a href="https://certbot.eff.org/">Certbot</a> - HTTPS automatisch aktivieren</li>
+<li><a href="https://whatpwacando.today/">WhatPWACanDo</a> - PWA-Beispiele</li>
+<li><a href="https://bubble.io/">Bubble</a>, <a href="https://opensilver.net/">opensilver</a>, <a href="https://anvil.works/">Anvil</a>, <a href="https://symfony.com/">Symfony</a> / <a href="https://github.com/symfony-cli/symfony-cli">CLI</a>, <a href="https://create-react-app.dev">Create-react-app</a> / <a href="https://github.com/facebook/create-react-app">GitHub</a>, <a href="https://lowdefy.com/">Lowdefy</a> oder <a href="https://sktch.io/">Sktch.io</a> - Web-App-Ersteller</li>
+<li><a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor">Blazor</a> oder <a href="https://github.com/pydantic/FastUI">FastUI</a> - Web-App-UI-Ersteller</li>
+<li><a href="https://laravel.com/">Laravel</a> oder <a href="https://lona-web.org/1.x/">Lona</a> - Web-App-Framework</li>
+<li><a href="https://www.pwabuilder.com/">PWABuilder</a> - Site in Progressive Web App umwandeln</li>
+<li><a href="https://chaos-frontend-toolkit.web.app/">Chaos Frontend Toolkit</a> - Deine Web-Apps verbessern, indem du sie zerstörst</li>
+<li><a href="https://www.zaproxy.org/">ZAP</a> - Web-App-Sicherheitstests</li>
+<li><a href="https://progressier.com/pwa-screenshots-generator">PWA Screenshot Generator</a> - PWA-Screenshots generieren</li>
+<li><a href="https://formtochatbot.com/">Form To Chatbot</a> - Google-Formular in Chatbot umwandeln</li>
+<li><a href="https://www.stackbit.com/">Stackbit</a> - JamStack-Tools</li>
+<li><a href="https://www.tnd.dev/">the New Dynamic</a> - JamStack-Verzeichnis</li>
+<li><a href="https://nuxt.com/">NuxtJS</a> - Vue-Framework / <a href="https://github.com/nuxt/devtools">Dev Tools</a></li>
+<li><a href="https://arco.design/vue/en-US/docs/start">Arco Design</a> oder <a href="https://www.naiveui.com/">Naive-UI</a> / <a href="https://github.com/tusen-ai/naive-ui">GitHub</a> - Vue 3 UI-Komponentenbibliothek</li>
+<li><a href="https://vuejs.org/">Vuejs Dev Tools</a> - Vue 3-Debugging zum Browser hinzufügen</li>
+<li><a href="https://github.com/vbenjs/vue-vben-admin">Vue vben admin</a> - Vue-Admin</li>
+<li><a href="https://shiki.style/">Shiki</a> oder <a href="https://github.com/tsenart/sight">Sight</a> - Syntax-Highlighter</li>
+<li><a href="https://mnmnotmail.org/">mnm</a> - Mitgliedermessaging-Tools</li>
+<li><a href="https://website.grader.com/">Website Grader</a> - Website-Bewertungstool</li>
+<li><a href="https://ngrok.com/">ngrok</a> - Einblicke in Tunnels zu Localhost-Tools</li>
+<li><a href="https://www.digitalocean.com/community/tools/nginx">NConfig</a> - <a href="https://nginx.org/">NGINX</a> Server-Config</li>
+<li><a href="https://tengine.taobao.org">tengine</a> / <a href="https://github.com/alibaba/tengine">GitHub</a> - NGINX mit zusätzlichen Funktionen</li>
+<li><a href="https://github.com/trimstray/nginx-admins-handbook">Nginx-Admins-Handbook</a> - NGINX-Leistung verbessern</li>
+<li><a href="https://chromewebstore.google.com/detail/visual-css-editor/cibffnhhlfippmhdmdkcfecncoaegdkh">Visual CSS Editor</a> - WordPress Site-Designer</li>
+<li><a href="https://wpmantiq.com/">Mantiq</a> - WordPress Visual Backend</li>
+<li><a href="https://github.com/hasinhayder/wpsqlite">WPSQLite</a> oder <a href="https://localwp.com">LocalWP</a> - WordPress Site-Bereitstellungstools</li>
+<li><a href="https://www.null-scripts.net/">Nulled Scripts</a>, <a href="https://nulljungle.com/">NullJungle</a> oder <a href="https://nullphpscript.com/">Null PHP Script</a> - Nulled-Skripte</li>
+<li><a href="https://faustjs.org">faustjs</a> - WordPress-Framework</li>
+<li><a href="https://upstatement.com/timber/">Timber</a> - WordPress-Theme-Ersteller / <a href="https://github.com/timber/timber">GitHub</a></li>
+<li><a href="https://www.kokoanalytics.com/">KokoAnalytics</a> - WordPress-Analytics</li>
+<li><a href="https://www.uuidtools.com/">UUID Tools</a> - UUID-Generator</li>
+</ul>
+<hr>
+<doc-anchor-target id="farbpaletten">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#farbpaletten">#</doc-anchor-trigger>
+        <span>Farbpaletten</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://github.com/Siddharth11/Colorful">Colorful</a></strong> - Farbschema-Ressourcen</li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com//r/FREEMEDIAHECKYEAH/wiki/img-tools#wiki_.25B7_palette_generators">Color Palette Generators</a></strong></li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com//r/FREEMEDIAHECKYEAH/wiki/img-tools#wiki_.25B7_color_pickers">Color Pickers</a></strong></li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://www.colorhexa.com/">ColorHexa</a></strong> - Farbe-Hex-Enzyklopädie</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://realtimecolors.com/">Realtime Colors</a></strong> - Farbpaletten-Vorschau</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://www.spycolor.com/">SpyColor</a></strong> oder <a href="https://colouris.surge.sh/">Colouris</a> - Farbmodell-Konvertierungen</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://colorandcontrast.com/">Color &amp; Contrast</a></strong> - Farb-/Kontrast-Leitfaden</li>
+<li><a href="https://www.colorsandfonts.com/">ColorsAndFonts</a> - Farben &amp; Typografiekombinationen schnell kopieren</li>
+<li><a href="https://paletton.com/">Paletton</a> - Farbschema-Designer</li>
+<li><a href="https://palettte.app/">Palettte</a> - Farbpaletten-Editor</li>
+<li><a href="https://palettegenerator.com/">PaletteGenerator</a> oder <a href="https://alwane.io/">Alwane</a> - Farbpaletten-Extraktor</li>
+<li><a href="https://colorable.jxnblk.com/">Colorable</a> / <a href="https://github.com/jxnblk/colorable">GitHub</a>, <a href="https://color.review/">color.review</a>, <a href="https://toolness.github.io/accessible-color-matrix/">accessible-color-matrix</a> oder <a href="https://abc.useallfive.com/">Accessible Brand Colors</a> - Barrierefreie Farbpaletten-Ersteller</li>
+<li><a href="https://colororacle.org/">Color Oracle</a>, <a href="https://www.whocanuse.com/">WhoCanUse</a> oder <a href="https://www.toptal.com/designers/colorfilter">Toptal</a> - Farbblindheitssimulator / Tests</li>
+<li><a href="https://github.com/arnelenero/simpler-color">Simpler Color</a> - Webfarbensystem erstellen</li>
+<li><a href="http://stylifyme.com/">Stylify Me</a> - Webseitenfarben extrahieren</li>
+<li><a href="https://www.colorzilla.com/">ColorZilla</a> - Farbwähler, Gradienten-Generator &amp; mehr</li>
+<li><a href="https://uigradients.com/">uiGradients</a> - Hex-Gradienten</li>
+<li><a href="https://www.shadertoy.com/browse">ShaderToy</a> - Benutzergemachte Shader</li>
+<li><a href="https://maketintsandshades.com/">MakeTintAndShade</a> - Tönungs- und Schattengenerator</li>
+<li><a href="https://alphredo.app/">Alphredo</a> - Transparente Farben erstellen</li>
+<li><a href="https://webaim.org/resources/contrastchecker/">Contrast Checker</a> oder <a href="https://colourcontrast.cc/">Colour Contrast</a> - Hintergrund-/Text-Kontrastprüfer</li>
+</ul>
+<hr>
+<doc-anchor-target id="frontend-tools">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#frontend-tools">#</doc-anchor-trigger>
+        <span>Frontend-Tools</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://awesome-web-animation.netlify.app/">Awesome Web Animation</a></strong> - Web-Animations-Ressourcen</li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/img-tools#wiki_.25B7_icons_.2F_svgs">Icon Download Sites</a></strong></li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/img-tools#wiki_.25BA_design_resources">Design Resources</a></strong> oder <a href="https://opensourcedesign.net/">Open Source Design</a></li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_website_templates">Website Templates</a></strong></li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_wordpress_themes">Wordpress Themes</a></strong></li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://www.checklist.design/">Design Checklist</a></strong> oder <a href="https://frontendchecklist.io/">Front-End Checklist</a> - Front-End-Entwicklungs-Checkliste</li>
+<li><a href="https://aspect.app/">Aspect</a> oder <a href="https://github.com/wandb/openui">OpenUI</a> - UI mit KI erstellen</li>
+<li><a href="https://contentdrips.com/">Contentdrips</a> oder <a href="https://creatorkit.com/">CreatorKit</a> - Marken-Design-Tools</li>
+<li><a href="https://www.supernova.io/">SuperNova</a> - Design-System-Manager</li>
+<li><a href="https://interplayapp.com/">Interplay</a> - Produktdesign-Tool</li>
+<li><a href="https://collectui.com/">CollectUI</a>, <a href="https://www.hoverstat.es/">Hoverstat</a>, <a href="https://httpster.net/">httpster</a>, <a href="https://www.waveguide.io/">Wave Guide</a>, <a href="https://goodux.appcues.com/">ReallyGoodUX</a> oder <a href="https://pageflows.com/">Pageflows</a> - UI-Design-Ideen</li>
+<li><a href="https://storybook.js.org/">StoryBook</a> oder <a href="https://mockend.com/">Mockend</a> - UI-Entwicklungs-Tools</li>
+<li><a href="https://github.com/ParthJadhav/Tkinter-Designer">Tkinter Designer</a> - Python-GUI erstellen</li>
+<li><a href="https://www.uidesigndaily.com/">UI Design Daily</a> oder <a href="https://uiverse.io/">UIVerse</a> - Kostenlose UI-Design-Ressourcen</li>
+<li><a href="https://open-ui.org/">Open UI</a> - Open-Standard-UI</li>
+<li><a href="https://codemyui.com/">CodeMyUI</a> oder <a href="https://semantic-ui.com/">Semantic UI</a> - User Interface Code Snippets</li>
+<li><a href="https://icon-shelf.github.io/">Icon Shelf</a> - Icon-Manager</li>
+<li><a href="https://formito.com/tools/favicon">Favicon Maker</a> oder <a href="https://www.favicon-generator.org/">Favicon Generator</a> - Favicons erstellen</li>
+<li><a href="https://icon.horse/">Icon Horse</a> oder <a href="https://favicone.com/">Favicone</a> - Favicon einer Site herunterladen / <a href="https://pastebin.com/Awnn50HX">Notiz</a></li>
+<li><a href="https://meta-mapper.com/">Meta-Mapper</a> - Website-Metadaten-Thumbnails</li>
+<li><a href="https://github.com/alibaba/SREWorks">SREWorks</a> - Betriebs- &amp; Wartungsplattform</li>
+<li><a href="https://component.gallery/">the component gallery</a> - Galerie für Designkomponenten</li>
+<li><a href="https://scrollbar.app/">Scrollbar.app</a> - Benutzerdefinierte Scrollbars gestalten</li>
+<li><a href="https://www.logotaco.com/">LogoTaco</a> - Projekt-Logos</li>
+<li><a href="https://emanote.srid.ca/">Emanote</a> - Sites aus Plain-Text-Notizen erstellen / <a href="https://github.com/srid/emanote">GitHub</a></li>
+<li><a href="https://plnkr.co/">Plunker</a> oder <a href="https://bloouikit.com/">Bloo</a> - Prototyp / Test von Website-Ideen</li>
+<li><a href="https://www.webdesignmuseum.org/">WebDesignMuseum</a> - Website-Designs im Laufe der Zeit</li>
+<li><a href="https://getbootstrap.com/">Bootstrap</a> - Mobile Site-Ersteller / <a href="https://icons.getbootstrap.com/">Icons</a> / <a href="https://bootsnipp.com/">Snippets</a> / <a href="https://mdbootstrap.com/">UI-Komponenten</a> / <a href="https://bootswatch.com/">Vorlagen</a>, <a href="https://bootstraptaste.com/">2</a></li>
+<li><a href="https://psdrepo.com/">PsdRepo</a> - Vorlagen, Mockups, Logos, Videos</li>
+<li><a href="https://daftpage.com/">Daft Page</a> - Landing-Page-Ersteller</li>
+<li><a href="https://landingpage.fyi/index.html">LandingPage</a> - Landing-Page-Tool-Index</li>
+<li><a href="https://saaspages.xyz/">SaaS Pages</a>, <a href="https://saaslandingpage.com/">SaaS Landing Page</a> oder <a href="https://www.lapa.ninja/">lapa</a> - Landing-Page-Vorlagen / Ideen</li>
+<li><a href="https://zeplin.io/">Zeplin</a> - Design-Vorlagen / Editor</li>
+<li><a href="https://github.com/reacttips-dev/codebases">Codebases</a> - ReactJS-Projekt-Quellcodes</li>
+<li><a href="https://vitejs.dev/">vite</a> oder <a href="https://layoutit.com/">layoutit</a> - Frontend-Entwicklungstools</li>
+<li><a href="https://github.com/dypsilon/frontend-dev-bookmarks">Frontend Development</a> - Frontend-Entwicklungsressourcen</li>
+<li><a href="https://www.avabucks.it/">BoxCoding</a> - Frontend-CSS-Komponenten</li>
+<li><a href="https://github.com/Shopify/hydrogen">Hydrogen</a> - Online-Store-Vorlagen</li>
+<li><a href="https://www.microcopy.me">MicroCopy</a> - Häufig verwendeten Website-Text kopieren</li>
+<li><a href="https://roughnotation.com/">RoughAnnotations</a> - Webseitenanmerkungen / Animationen</li>
+<li><a href="https://svgx.app/">SVGX</a> - SVG-Asset-Manager</li>
+<li><a href="https://svg2jsx.com/">SVG2JSX</a> - SVG-zu-JSX-Konverter</li>
+<li><a href="https://pattern.monster/">Pattern Monster</a> - SVG-Muster-Generator</li>
+<li><a href="https://maxbittker.github.io/broider/">Broider</a> - Rand-Designs erstellen</li>
+<li><a href="https://www.shapedivider.app/">ShapeDivider</a> - SVG-Formteiler erstellen</li>
+<li><a href="https://svg-path-visualizer.netlify.app/">SVG Path</a> - SVG-Pfad-Visualizer</li>
+<li><a href="https://yqnn.github.io/svg-path-editor/">svg-path-editor</a> - SVG-Pfad-Editor</li>
+<li><a href="https://getwaves.io/">Get Waves</a>, <a href="https://wavelry.vercel.app/">Wavelry</a>, <a href="https://svgwave.in/">SVGWave</a> / <a href="https://github.com/anup-a/svgwave">GitHub</a> oder <a href="https://www.softr.io/tools/svg-wave-generator">SVG Wave</a> - SVG-Wellen-Generatoren</li>
+<li><a href="https://www.blobmaker.app/">Blobmaker</a> - SVG-Blob-Generator</li>
+<li><a href="https://lorem.space/">Lorem.space</a>, <a href="https://github.com/pomber/placeholdifier">Placeholdifier</a>, <a href="https://placeholder.pics/">PlaceHolder</a>, <a href="https://picsum.photos/">PicSum</a> oder <a href="https://fakeimg.pl/">FakeIMG</a> - Platzhalterbilder für Websites</li>
+<li><a href="https://minimalavatars.com/">MinimalAvatars</a> - Minimale Site-Avatare</li>
+<li><a href="https://www.visiwig.com/">Visiwig</a> - Website-Grafiken kopieren / einfügen</li>
+<li><a href="https://webdesigner.withgoogle.com/">WebDesigner</a>, <a href="https://github.com/tooll3/t3">T3</a>, <a href="https://www.theatrejs.com/">Theatre.js</a> / <a href="https://github.com/theatre-js/theatre">GitHub</a>, <a href="https://gsap.com/">GSAP</a>, <a href="https://jeremyckahn.github.io/stylie/">Stylie</a>, <a href="https://www.renderforest.com">RenderForest</a>, <a href="https://jeremyckahn.github.io/mantra/">Mantra</a> oder <a href="https://animate.style/">Animate.css</a> - Interaktive Motion Graphics erstellen</li>
+<li><a href="https://useanimations.com/index.html">useAnimations</a> oder <a href="https://lordicon.com/">LordIcon</a> - Animierte Icons</li>
+<li><a href="https://tholman.com/cursor-effects/">Cursor Effects</a> - Cursors im Stil der 90er Jahre</li>
+<li><a href="https://app.naker.io/back/">NakerApp</a> - Interaktiver Hintergrund-Ersteller</li>
+<li><a href="https://error404.fun/">Error404</a> - Kostenlose 404-Seiten</li>
+<li><a href="https://http.cat/">HTTP Cats</a> - Katzenbilder in Statuscodes einfügen</li>
+</ul>
+<hr>
+<doc-anchor-target id="hosting-tools">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#hosting-tools">#</doc-anchor-trigger>
+        <span>Hosting-Tools</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://github.com/irazasyed/awesome-cloudflare">Awesome Cloudflare</a></strong> - Cloudflare-Ressourcen</li>
+<li><span class="docs-emoji">&#x1F310;</span> <strong><a href="https://lowendstock.com/deals/">VPS Comparison Chart</a></strong> oder <a href="https://bitcoin-vps.com/">Bitcoin VPS</a> - VPS-Vergleiche</li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_free_webhosting_sites">Free Webhosting Sites</a></strong></li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_free_dns_servers">Free DNS Servers</a></strong></li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_domain_info_tools">Domain Info Tools</a></strong></li>
+<li><span class="docs-emoji">&#x21AA;&#xFE0F;</span> <strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_domain_availability">Domain Availability</a></strong></li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://offshore.cat/">Offshore.CAT</a></strong> - DMCA-ignorierende Hosting-Liste</li>
+<li><span class="docs-emoji">&#x2B50;</span> <strong><a href="https://check-host.net/">Check-Host</a></strong>, <a href="https://github.com/statping/statping">StatPing</a>, <a href="https://betterstack.com/uptime">Uptime</a>, <a href="https://github.com/louislam/uptime-kuma">Uptime Kuma</a>, <a href="https://www.highlight.io/">Highlight</a>, <a href="https://github.com/shukriadams/arewedown">AreWeDown?</a>, <a href="https://uptimerobot.com/">UptimeRobot</a> oder <a href="https://www.site24x7.com/tools.html">24x7</a> - Site-Uptime-Monitore</li>
+<li><a href="https://gitlab.torproject.org/legacy/trac/-/wikis/doc/GoodBadISPs">GoodBadISPs</a> - Beste ISPs für Tor-Hosting</li>
+<li><a href="https://www.serverhunter.com/">Server Hunter</a> - Server suchen / vergleichen</li>
+<li><a href="https://sentora.org/">Sentora</a> oder <a href="https://github.com/Moonlight-Panel/Moonlight">Moonlight</a> - Web-Hosting-Panels</li>
+<li><a href="https://shell.segfault.net/">SegFault</a> - Einweg-Root-Server</li>
+<li><a href="https://getdeploying.com/">GetDeploying</a> - Cloud-Anbieter vergleichen</li>
+<li><a href="https://www.dnsperf.com/dns-providers-list/">DNSPerf</a> - DNS-Anbieter-Rankings</li>
+<li><a href="https://www.grc.com/dns/benchmark.htm">GRC DNSBench</a> - DNS-Benchmark</li>
+<li><a href="https://github.com/curl/curl/wiki/DNS-over-HTTPS">DNS over HTTPS</a> - HTTPS-DoH-Abfragen</li>
+<li><a href="https://dnspropagation.net/">DNS Propagation</a> - DNS-Checker</li>
+<li><a href="https://lewdev.github.io/apps/meta-tag-gen/">Meta Tag Gen</a>, <a href="https://www.opengraph.xyz/">OpenGraph</a> oder <a href="https://metatags.io/">MetaTags</a> - Meta-Tag-Generatoren</li>
+<li><a href="https://www.dnforum.com/">DNForum</a> - Domain-Name-Forum</li>
+<li><a href="https://worthbuck.com/">WorthBuck</a> oder <a href="https://www.siteprice.org/">SitePriace</a> - Domain-Preisschätzungen</li>
+<li><a href="https://haveibeensquatted.com">HaveIBeenSquatted</a> - Typosquatting-Entdeckungs-Tool</li>
+<li><a href="https://www.iana.org/">iana</a>, <a href="https://www.arin.net/">arin</a>, <a href="https://www.lacnic.net/">lacnic</a>, <a href="https://www.afrinic.net/">afrinic</a> oder <a href="https://www.apnic.net/">apnic</a> - Internet-Registry-Seiten</li>
+<li><a href="https://takingnames.io/blog/instant-subdomains">takingnames</a>, <a href="https://www.getfreedomain.name/">GetFreeDomain</a> oder <a href="https://nic.eu.org/">EU.org</a> / <a href="https://nic.ua/en/domains/.pp.ua">2</a> - Kostenlose Subdomains</li>
+<li><a href="https://github.com/benphelps/homepage">Homepage</a>, <a href="https://github.com/pawelmalak/flame">Flame</a>, <a href="https://github.com/bastienwirtz/homer">Homer</a> oder <a href="https://dashy.to/">Dashy</a> / <a href="https://github.com/lissy93/dashy">GitHub</a> - Startseiten für Heimserver</li>
+<li><a href="https://thedev.id/">TheDev</a> - Kostenlose Entwickler-Subdomains</li>
+<li><a href="https://redirect.name/">redirect.name</a> - URL-Weiterleitung</li>
+<li><a href="https://tools.pingdom.com">PingDom</a> - Website anpingen</li>
+<li><a href="https://kener.ing/">Kener</a> - Selbst-gehostete Statusseite</li>
+<li><a href="https://rentry.co/oraclevps">Oracle VPS</a> - VPS</li>
+<li><a href="https://hitch-tls.org/">Hitch</a> - SSL / TLS-Proxy</li>
+<li><a href="https://github.com/acmesh-official/acme.sh">acme.sh</a> - Auto-Issues / Zertifikatserneuerung</li>
+<li><a href="https://letsencrypt.org/">Let&#x27;s Encrypt</a> - Kostenlose TLS-Zertifikate</li>
+<li><a href="https://www.sslforfree.com/">SSL for Free</a> oder <a href="https://zerossl.com/">ZeroSSL</a> - Kostenlose SSL-Zertifikate</li>
+<li><a href="https://certalert.net/">CertAlert</a> - Benachrichtigt dich, wenn ein TLS/SSL-Zertifikat abläuft</li>
+<li><a href="https://github.com/FiloSottile/mkcert">mkcert</a> - Lokal vertrauenswürdige Entwicklung-Zertifikate</li>
+<li><a href="https://ssl-config.mozilla.org/">SSL Config Generator</a> - SSL-Konfigurationen generieren</li>
+<li><a href="https://sandstorm.org/">Sandstorm</a>, <a href="https://cosmos-cloud.io/">Cosmos</a> oder <a href="https://www.cloudron.io/">CloudRon</a> - Web-App-Hosts</li>
+<li><a href="https://vichan.info">vichan</a> / <a href="https://github.com/vichan-devel/vichan">GitHub</a> oder <a href="https://overscript.net/">overscript</a> - Imageboard-Hosting</li>
+<li><a href="https://www.proboards.com/">ProBoards</a> - Forum &amp; Imageboard-Hosting</li>
+<li><a href="https://www.mybb.com/">MyBB</a>, <a href="https://freeflarum.com/">FreeFlarum</a> oder <a href="https://www.phpbb.com/">PHPBB</a> - Forum-Hosting</li>
+<li><a href="https://www.mediawiki.org/">Media Wiki</a>, <a href="https://www.xwiki.org/xwiki/bin/view/Main/">xWiki</a>, <a href="https://www.dokuwiki.org/dokuwiki">DokuWiki</a>, <a href="https://miraheze.org/">Miraheze</a>, <a href="https://linbreux.github.io/wikmd/">wikmd</a> oder <a href="https://www.fandom.com/">Fandom</a> - Kostenloses Wiki hosten</li>
+<li><a href="https://www.humhub.com">HumHub</a> oder <a href="https://scuttlebutt.nz/">scuttlebutt</a> - Selbst-gehostetes soziales Netzwerk</li>
+<li><a href="https://github.com/HDInnovations/UNIT3D-Community-Edition">UNIT3D Community Edition</a> - Private Tracker Hosting</li>
+</ul>
+
+                                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../tools/internettools/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Internet-​Tools</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../tools/werbeblocker/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Ad​Blocker</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright THK BlackBoard, with <span class="docs-emoji">&#x1F499;</span> by PunchMeSantana 2024. All rights reserved.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Entwickler Tools", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+</body>
+</html>

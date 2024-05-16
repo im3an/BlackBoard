@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.769174172686">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.5.0">
+
+    <!-- Primary Meta Tags -->
+    <title>AdBlocker</title>
+    <meta name="title" content="AdBlocker">
+    <meta name="description" content="Hinweis: Vermeiden Sie es, mehrere allgemeine AdBlocker (z. B.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="/tools/werbeblocker/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/tools/werbeblocker/">
+    <meta property="og:title" content="AdBlocker">
+    <meta property="og:description" content="Hinweis: Vermeiden Sie es, mehrere allgemeine AdBlocker (z. B.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="/tools/werbeblocker/">
+    <meta property="twitter:title" content="AdBlocker">
+    <meta property="twitter:description" content="Hinweis: Vermeiden Sie es, mehrere allgemeine AdBlocker (z. B.">
+
+    <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../../resources/css/retype.css?v=3.5.0.769174172686" rel="stylesheet">
+
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.769174172686" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.769174172686" data-turbo-eval="false" defer></script>
+</head>
+<body>
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-xl">
+                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">THK BlackBoard</span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">v1.1</span>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://drive.google.com/drive/u/1/folders/1xpEDVhWXqmN0r3rA-h2HZBAJaNQqYNSW">Google Drive ↗︎</a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://drive.google.com/drive/u/1/folders/1xpEDVhWXqmN0r3rA-h2HZBAJaNQqYNSW">Discord ↗︎</a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Hidden Link ↗︎</a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://rentry.co/fmhy-guides">Guides ↗︎</a>
+                            </li>
+        
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+                            <input class="w-full h-10 placeholder-gray-400 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 dark:placeholder-dark-400" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
+                        </div>
+        
+                        <!-- Mobile search button -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placeholder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
+                </div>
+            
+                <div class="pl-6 mt-1 mb-4">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                            <nav>
+                                <ul class="flex flex-wrap justify-center items-center">
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://drive.google.com/drive/u/1/folders/1xpEDVhWXqmN0r3rA-h2HZBAJaNQqYNSW">Google Drive ↗︎</a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://drive.google.com/drive/u/1/folders/1xpEDVhWXqmN0r3rA-h2HZBAJaNQqYNSW">Discord ↗︎</a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Hidden Link ↗︎</a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://rentry.co/fmhy-guides">Guides ↗︎</a>
+                                    </li>
+            
+                                </ul>
+                            </nav>
+                        </div>
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                                <!-- Page content  -->
+<doc-anchor-target id="adblocker" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#adblocker">#</doc-anchor-trigger>
+        <span>AdBlocker</span>
+    </h1>
+</doc-anchor-target>
+<doc-anchor-target id="adblocker">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#adblocker">#</doc-anchor-trigger>
+        <span>AdBlocker</span>
+    </h2>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p><strong>Hinweis:</strong> Vermeiden Sie es, mehrere allgemeine AdBlocker (z. B. uBlock Origin und Adblock Plus) gleichzeitig zu verwenden, da dies zu Problemen führen kann. Dies gilt nur für allgemeine AdBlocker, daher ist die gleichzeitige Nutzung von uBlock Origin und SponsorBlock in Ordnung.</p>
+        </div>
+    </div>
+</div>
+<hr>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/audio#wiki_.25B7_spotify_adblockers">Spotify AdBlocker</a></strong></li>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/social-media#wiki_.25B7_twitch_adblockers">Twitch AdBlocker</a></strong></li>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/internet-tools#wiki_.25B7_paywall_bypass">Artikel-Bezahlschranken umgehen</a></strong></li>
+<li><strong><a href="https://github.com/gorhill/uBlock#installation">uBlock Origin</a></strong> - AdBlocker / <a href="https://addons.mozilla.org/blog/ublock-origin-everything-you-need-to-know-about-the-ad-blocker/">Anleitung</a> / <a href="https://youtu.be/2lisQQmWQkY">Erweiterte Nutzung</a></li>
+<li><strong><a href="https://sponsor.ajay.app/">SponsorBlock</a></strong> - Überspringen von gesponserten YouTube-Werbeclips / <a href="https://github.com/mchangrh/sb.js">Script 1</a>, <a href="https://greasyfork.org/en/scripts/453320">Script 2</a></li>
+<li><strong><a href="https://github.com/NicolaeNMV/BehindTheOverlay">BehindTheOverlay</a></strong> - Versteckt Website-Overlays</li>
+<li><strong><a href="https://openvideofs.github.io">OpenVideo</a></strong> oder <a href="https://github.com/ByteDream/stream-bypass">Stream-Bypass</a> - Videos in einem werbefreien Player abspielen</li>
+<li><strong><a href="https://github.com/0x48piraj/fadblock">fadblock</a></strong> oder <a href="https://greasyfork.org/en/scripts/32626">Disable YT Video Ads</a> - YouTube AdBlocker</li>
+<li><strong><a href="https://www.adspeedup.com/">ADSpeedUp</a></strong> - YouTube-Werbung beschleunigen, statt zu überspringen, um Ersteller zu unterstützen</li>
+<li><strong><a href="https://addons.mozilla.org/en-US/firefox/addon/popupblockerall/">Popupblocker All</a></strong>, <strong><a href="https://romanisthere.github.io/PopUpOFF-Website/index.html">PopUpOFF</a></strong> oder <strong><a href="https://github.com/AdguardTeam/PopupBlocker">PopupBlocker</a></strong> - Popup-/Neues-Tab-Blocker</li>
+<li><strong><a href="https://github.com/AdguardTeam/AdguardBrowserExtension#installation">Adguard</a></strong> - AdBlocker</li>
+<li><strong><a href="https://adblock-tester.com/">Adblock Tester</a></strong> oder <strong><a href="https://d3ward.github.io/toolz/adblock.html">AdBlocker Test</a></strong> - Werbeblock-Tests</li>
+<li><strong><a href="https://12ft.io/">12ft.io</a></strong> - Teile werbefreie URLs</li>
+</ul>
+<hr>
+<doc-anchor-target id="adblock-filter">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#adblock-filter">#</doc-anchor-trigger>
+        <span>Adblock-Filter</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong><a href="https://github.com/yokoffing/filterlists">yokoffings empfohlene Filter</a></strong></li>
+<li><strong><a href="https://github.com/DandelionSprout/adfilt/blob/master/LegitimateURLShortener.txt">LegitimateURLShortener</a></strong></li>
+<li><strong><a href="https://filterlists.com/">FilterLists.com</a></strong> - Filter-Suche</li>
+<li><strong><a href="http://raymondhill.net/ublock/adbox.html">Adbox</a></strong> - Filter testen</li>
+<li><strong><a href="https://github.com/DandelionSprout/adfilt">DandelionSprout adlift</a></strong></li>
+<li><strong><a href="https://www.reddit.com/r/uBlockOrigin/wiki/solutions#wiki_facebook">Facebook-Filter</a></strong></li>
+<li><strong><a href="https://github.com/DandelionSprout/adfilt/blob/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt">Clear URLs für uBO</a></strong></li>
+<li><strong><a href="https://github.com/yourduskquibbles/webannoyances">webannoyances</a></strong></li>
+<li><strong><a href="https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/ads_list.txt">NoADS_RU</a></strong></li>
+<li><strong><a href="https://github.com/Karmesinrot/Anifiltrs">Anifiltrs</a></strong></li>
+</ul>
+<hr>
+<doc-anchor-target id="redirect-umgehung">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#redirect-umgehung">#</doc-anchor-trigger>
+        <span>Redirect-Umgehung</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong><a href="https://codeberg.org/Amm0ni4/bypass-all-shortlinks-debloated/">Alle Kurzlinks umgehen</a></strong></li>
+<li><strong><a href="https://bypass.city/">bypass.city</a></strong>, <a href="https://adbypass.org/">2</a> / <a href="https://bypass.city/how-to-install-userscript">Userscript</a> / <a href="https://discord.com/invite/uMEtrpRvAf">Discord</a></li>
+<li><strong><a href="https://fastforward.team/">FastForward</a></strong> / <a href="https://discord.gg/RSAf7b5njt">Discord</a> / <a href="https://pastebin.com/Gr2AhsE8">Hinweis</a></li>
+<li><strong><a href="https://adsbypasser.github.io/">AdsBypasser</a></strong> / <a href="https://github.com/adsbypasser/adsbypasser">2</a></li>
+<li><strong><a href="https://thebypasser.com/">TheBypasser</a></strong></li>
+<li><strong><a href="https://bypass-links.vercel.app">Bypass-Links</a></strong> / <a href="https://github.com/amitsingh-007/bypass-links">GitHub</a></li>
+<li><strong><a href="https://yuumari.com/bypass/">Yuumari</a></strong> / <a href="https://chromewebstore.google.com/detail/auto-link-bypasser/doiagnjlaingkmdjlbfalakpnphfmnoh">Extension</a> / <a href="https://yuumari.com/m-links/#js-code">Script</a></li>
+<li><strong><a href="https://greasyfork.org/en/scripts/442019">UploadHEaven</a></strong></li>
+<li><strong><a href="https://greasyfork.org/en/scripts/403170">FileCrypt umgehen</a></strong></li>
+<li><strong><a href="https://adbypass.eu/">Adbypass.eu</a></strong> - Ad-maven-Umgehung</li>
+</ul>
+<hr>
+<doc-anchor-target id="dns-adblocker">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dns-adblocker">#</doc-anchor-trigger>
+        <span>DNS-AdBlocker</span>
+    </h3>
+</doc-anchor-target>
+<p><strong>Hinweis:</strong> Wenn Ihr Ziel ist, Browser-Werbung zu blockieren, ist es am besten, bei uBlock Origin zu bleiben, da zusätzliche Filter zu Konflikten oder Anti-Werbeblock-Funktionen führen können.</p>
+<hr>
+<ul>
+<li><strong><a href="https://adguard-dns.io/kb/general/dns-providers/">DNS-Anbieter</a></strong> - DNS-Anbieter-Index</li>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_dns_filters">DNS-Filter/Blocklisten</a></strong></li>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_free_dns_servers">Kostenlose DNS-Server</a></strong></li>
+<li><strong><a href="https://nextdns.io">NextDNS</a></strong> - DNS-AdBlocker / <a href="https://github.com/yokoffing/NextDNS-Config">Anleitung</a> / <a href="https://youtu.be/WUG57ynLb8I">Video</a></li>
+<li><strong><a href="https://controld.com/">ControlD</a></strong> - DNS-Manager</li>
+<li><strong><a href="https://github.com/AdguardTeam/AdGuardHome/wiki/Docker">AdGuard Home</a></strong> - DNS-AdBlocker / Selbstgehostet / <a href="https://github.com/klutchell/balena-adguard">Setup</a> / <a href="https://github.com/hl2guide/AdGuard-Home-Whitelist">Filter</a></li>
+<li><strong><a href="https://yogadns.com/">YogaDNS</a></strong> - DNS-AdBlocker</li>
+<li><strong><a href="https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/">Mullvad DNS</a></strong> - DNS-AdBlocker</li>
+<li><strong><a href="https://rethinkdns.com/configure">serverless-dns</a></strong> - Serverloses DNS</li>
+<li><strong><a href="https://ahadns.com/">AhaDNS</a></strong> - DNS-AdBlocker</li>
+<li><strong><a href="https://blahdns.com/">BlahDNS</a></strong> - DNS-AdBlocker</li>
+<li><strong><a href="https://adguard-dns.io/">Adguard DNS</a></strong> - DNS-AdBlocker</li>
+<li><strong><a href="https://alternate-dns.com/index.php">AlternateDNS</a></strong> - DNS-AdBlocker</li>
+<li><strong><a href="https://libredns.gr/">LibreDNS</a></strong> - DNS-AdBlocker</li>
+<li><strong><a href="https://diversion.ch/">Diversion</a></strong> - DNS-AdBlocker</li>
+<li><strong><a href="https://nxfilter.org/">NxFilter</a></strong> - DNS-AdBlocker</li>
+<li><strong><a href="https://www.zenz-solutions.de/personaldnsfilter-wp/">personalDNSfilter</a></strong> - DNS-AdBlocker</li>
+<li><strong><a href="https://pi-hole.net/">Pi-Hole</a></strong> - DNS-AdBlocker / Selbstgehostet</li>
+<li>Pi-Hole-Tools - <a href="https://github.com/DesktopECHO/Pi-Hole-for-WSL1">Installationsskript</a> / <a href="https://firebog.net/">Filter</a> / <a href="https://addons.mozilla.org/en-US/firefox/addon/alanine/">Firefox</a> / <a href="https://chromewebstore.google.com/detail/alanine/lohlpbknpcngpjifmofkidennikljlfi">Chrome</a> / <a href="https://hub.docker.com/repository/docker/kulda22/alanine">Docker</a> / <a href="https://github.com/MoralCode/pihole-antitelemetry">Antitelemetrie</a></li>
+<li><strong><a href="https://tblock.me/">TBlock</a></strong> - DNS-AdBlocker / <a href="https://codeberg.org/tblock/filters">Filter</a></li>
+<li><strong><a href="https://dns.lookup.dog/">dog</a></strong> - DNS-CLI</li>
+<li><strong><a href="https://dnsprivacy.org/dns_privacy_daemon_-_stubby/">Stubby</a></strong> - DNS-Stub-Resolver</li>
+<li><strong><a href="https://www.duckdns.org/">DuckDNS</a></strong>, <strong><a href="https://freedns.afraid.org/">FreeDNS</a></strong>, <strong><a href="https://www.noip.com/">NoIP</a></strong> oder <strong><a href="https://desec.io/">Desec</a></strong> - Dynamische DNS-Dienste</li>
+<li><strong><a href="https://phishing.army/">Phishing Army</a></strong> - DNS-Phishing-Blockliste</li>
+<li><strong><a href="https://gitlab.isc.org/isc-projects/bind9">BIND</a></strong> - Portables DNS-Protokoll</li>
+<li><strong><a href="https://maza-ad-blocking.andros.dev/">Maza</a></strong> - Lokale DNS-AdBlocker</li>
+<li><strong><a href="https://encrypted-dns.party/">DNS Party</a></strong> - DNS-Konfigurationsprofile für Apple-Geräte</li>
+<li><strong><a href="https://github.com/nickspaargaren/no-google">no-google</a></strong> - Alle Google-Dienste blockieren</li>
+<li><strong><a href="https://redd.it/gn7fw5">Samsung Smart TV Adblock</a></strong> - Smart-TV-Werbung blockieren</li>
+<li><strong><a href="https://doh.tiar.app/">DNS Resolver Privacy-First</a></strong> - DNS-Resolver</li>
+<li><strong><a href="https://technitium.com/dns">Technitium</a></strong> oder <strong><a href="https://github.com/hickory-dns/hickory-dns">Hickory DNS</a></strong> - Selbstgehosteter DNS-Server</li>
+<li><strong><a href="https://dnsperf.com/dns-speed-benchmark">DNS Perf</a></strong> oder <strong><a href="https://code.google.com/archive/p/namebench/">NameBench</a></strong> - DNS-Geschwindigkeitstests</li>
+</ul>
+<hr>
+<doc-anchor-target id="linux-adblocker">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#linux-adblocker">#</doc-anchor-trigger>
+        <span><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/linux#wiki_.25B7_adblock_.2F_privacy">Linux-AdBlocker</a></span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="mac-adblocker">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mac-adblocker">#</doc-anchor-trigger>
+        <span><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/linux#wiki_.25BA_mac_adblock_.2F_privacy">Mac-AdBlocker</a></span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="android-adblocker">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#android-adblocker">#</doc-anchor-trigger>
+        <span><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/android#wiki_.25B7_android_adblocking">Android-AdBlocker</a></span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="ios-adblocker">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ios-adblocker">#</doc-anchor-trigger>
+        <span><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/android#wiki_.25B7_ios_adblocking">iOS-AdBlocker</a></span>
+    </h2>
+</doc-anchor-target>
+<hr>
+<doc-anchor-target id="antivirus--malware">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#antivirus--malware">#</doc-anchor-trigger>
+        <span>Antivirus / Malware</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/antivirus/wiki/index/">/r/Antivirus Index</a></strong> - Antivirus-Tools-Index</li>
+<li><strong><a href="https://github.com/rshipp/awesome-malware-analysis">Awesome Malware Analysis</a></strong> - Malware-Analyse-Ressourcen</li>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_site_legitimacy_check">Website-Legitimitätsprüfung</a></strong></li>
+<li><strong><a href="https://www.reddit.com/r/Piracy/wiki/browsing_and_downloading_guide">How to Avoid Malware</a></strong> - Malware-Vermeidungsanleitung</li>
+<li><strong><a href="https://sandboxie-plus.com/">Sandboxie Plus</a></strong> / <a href="https://rentry.co/sandboxie-guide">Anleitung</a>, <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview">Windows Sandbox</a> oder <a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/system-tools#wiki_.25B7_virtual_machines">Virtuelle Maschinen</a> - Sandbox-Umgebungen</li>
+<li><strong><a href="https://www.malwarebytes.com/adwcleaner/">AdwCleaner</a></strong> - Anti-Adware</li>
+<li><strong><a href="https://rentry.co/fmhybase64#malwarebytes-prem">Malwarebytes Premium</a></strong> - Antivirus</li>
+<li><strong><a href="https://www.reddit.com/user/goretsky/m/security/">Security / Antivirus Multireddit</a></strong> - Reddit-Communities</li>
+<li><strong><a href="https://www.bleepingcomputer.com/forums/f/22/virus-trojan-spyware-and-malware-removal-help/">BleepingComputer Foren</a></strong>, <a href="https://forums.malwarebytes.com/forum/7-windows-malware-removal-help-support/">Malwarebytes Foren</a> oder <a href="https://www.sysnative.com/forums/forums/security-arena.66/">Sysnative Foren</a> - Malware-Entfernungsforen / <a href="https://pastebin.com/0mrmPXgz">Hinweis</a></li>
+<li><strong><a href="https://rentry.co/FMHYBase64#eset">ESET</a></strong> - Antivirus</li>
+<li><strong><a href="https://dangerzone.rocks/">Dangerzone</a></strong> / <a href="https://github.com/freedomofpress/dangerzone">GitHub</a> - Gefährliche PDFs in sichere PDFs umwandeln</li>
+<li><strong><a href="https://any.run/">ANY.RUN</a></strong>, <a href="https://tria.ge/">Triage</a> oder <a href="https://cuckoo.cert.ee/">Cuckoo</a> - Online-Sandboxes</li>
+<li><strong><a href="https://github.com/hasherezade/pe-sieve">PE-sieve</a></strong> - Prozess-Scanner</li>
+<li><strong><a href="https://www.nomoreransom.org/en/decryption-tools.html">No More Ransom</a></strong> - Ransomware-Entschlüsselungstools</li>
+<li><strong><a href="https://id-ransomware.malwarehunterteam.com/">ID Ransomware</a></strong> - Ransomware-Identifikationstool</li>
+<li><strong><a href="https://github.com/AndyFul/ConfigureDefender">ConfigureDefender</a></strong> - Windows Defender Einstellungen konfigurieren</li>
+<li><strong><a href="https://www.defenderui.com/">DefenderUI</a></strong> - Verbesserte Windows Defender Benutzeroberfläche</li>
+<li><strong><a href="https://antivirus-removal-tool.com/">Antivirus-Entfernungstool</a></strong> - Tool zur Entfernung von Antivirus-Software</li>
+</ul>
+<hr>
+<doc-anchor-target id="dateiscanner">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dateiscanner">#</doc-anchor-trigger>
+        <span>Dateiscanner</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong><a href="https://rentry.co/thesecondopinion">The Second Opinion</a></strong> - Tragbare Malware-Scanner / Entfernungstools</li>
+<li><strong><a href="https://www.virustotal.com/">VirusTotal</a></strong> / <a href="https://rentry.co/piracy-faq-virustotal">Scanergebnisse-Anleitung</a>, <a href="https://rentry.co/VTGuide">2</a> oder <strong><a href="https://hybrid-analysis.com/">Hybrid Analysis</a></strong> - Online-Dateianalyse</li>
+<li><strong>VirusTotal Tools</strong> - <a href="https://github.com/VirusTotal/vt-cli">CLI</a> / <a href="https://t.me/virus_total_scan_bot">Telegram Bot</a> / <a href="https://github.com/SamuelTulach/VirusTotalUploader">Uploader</a> / <a href="https://www.virustotal.com/old-browsers/">Lite Version</a></li>
+<li><strong><a href="https://learn.microsoft.com/en-us/defender-endpoint/safety-scanner-download">Microsoft Safety Scanner</a></strong> oder <a href="https://www.emsisoft.com/en/home/emergencykit/">Emsisoft Emergency Kit</a> - On-Demand-AV-Scanner</li>
+<li><strong><a href="https://manalyzer.org/">Manalyzer</a></strong> - PE-Dateiscanner</li>
+<li><strong><a href="https://github.com/bee-san/pyWhat">pyWhat</a></strong> - Irgendetwas identifizieren</li>
+<li><strong><a href="https://github.com/anchore/grype">Grype</a></strong> - Container-Images-Schwachstellenscanner</li>
+<li><strong><a href="https://www.winitor.com/">Malware Initial Assessment</a></strong> - Lokales Analysetool</li>
+<li><strong><a href="https://virusscan.jotti.org/en">Jotti</a></strong> - Online-Dateiscanner</li>
+<li><strong><a href="https://www.bleepingcomputer.com/download/farbar-recovery-scan-tool/">Farbar</a></strong> / <a href="https://www.bleepingcomputer.com/forums/t/781976/">Anleitung</a> - Lokaler Dateiscanner</li>
+</ul>
+<hr>
+<doc-anchor-target id="privatsphäre">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#privatsphäre">#</doc-anchor-trigger>
+        <span>Privatsphäre</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><strong><a href="https://github.com/jaredthecoder/awesome-vehicle-security">Awesome Vehicle Security</a></strong> - Fahrzeugsicherheitsressourcen</li>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_sms_verification_sites">SMS-Verifizierungsseiten</a></strong></li>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/file-tools#wiki_.25B7_file_encryption">Dateiverschlüsselung</a></strong></li>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/file-tools#wiki_.25B7_formatting_.2F_deletion">Laufwerksformatierung / Dateilöschung</a></strong></li>
+<li><strong><a href="https://privacy.sexy/">Privacy.Sexy</a></strong> - Privatsphäre-Skripte</li>
+<li><strong><a href="https://tails.net/">Tails</a></strong>, <a href="https://www.whonix.org/">whonix</a> oder <a href="https://www.qubes-os.org/">Qubes</a> - Datenschutzorientierte Betriebssysteme</li>
+<li><strong><a href="https://www.oo-software.com/en/shutup10">ShutUp10</a></strong>, <a href="https://www.w10privacy.de/english-home/">W10Privacy</a> oder <a href="https://github.com/troennes/private-secure-windows">private-secure-windows</a> - Anti-Spy-Tools</li>
+<li><strong><a href="https://gist.github.com/ave9858/a2153957afb053f7d0e7ffdd6c3dcb89">Telemetry.md</a></strong> - Windows 10/11-Telemetrie deaktivieren</li>
+<li><strong><a href="https://frigate.video/">Frigate</a></strong>, <a href="https://github.com/scottbarnesg/smart-sec-cam">Smart Sec Cam</a> oder <a href="https://zoneminder.com/">ZoneMinder</a> - Überwachungskamerasysteme</li>
+<li><strong><a href="https://www.te-home.net/">Team Elite</a></strong> oder <a href="https://technet24.ir/">Technet24</a> - Sicherheitssoftware / <a href="https://github.com/FilipePS/Traduzir-paginas-web">Übersetzer</a></li>
+<li><strong><a href="https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List">Big Ass Data Broker Opt-Out List</a></strong> - Liste der Datenbroker-Opt-Out-Ressourcen</li>
+<li><strong><a href="https://github.com/pcarrier/gauth">Gauth</a></strong> - Google Authenticator für Laptops</li>
+<li><strong><a href="https://www.f-secure.com/en/identity-theft-checker">F-Secure Identity Theft Checker</a></strong> - Identitätsdiebstahl-Check</li>
+<li><strong><a href="https://fakephonenumber.net/">FakePhoneNumber</a></strong> - Fake-Telefonnummern generieren</li>
+<li><strong><a href="https://pdfencrypt.net/">PDFEncrypt</a></strong> - PDF-Dateiverschlüsselung</li>
+<li><strong><a href="https://privnote.com/">PrivNote</a></strong>, <a href="https://safenote.co/">SafeNote</a>, <a href="https://burn.link/">Burn.Link</a>, <a href="https://thislinkwillselfdestruct.com/">ThisLinkWillSelfDestruct</a>, <a href="https://s.cr/">s.cr</a> oder <a href="https://onetimesecret.com/">OneTimeSecret</a> - Selbstzerstörende Nachrichten senden</li>
+<li><strong><a href="https://chausies.xyz/encrypt">chausies encrypt</a></strong>, <a href="https://stegcloak.surge.sh/">Steg Cloak</a> oder <a href="https://www.spammimic.com/index.cgi">spam mimic</a> - Verschlüsselte Nachrichten senden</li>
+<li><strong><a href="https://github.com/matiaskorhonen/paper-age">Paper Age</a></strong> - Papier-Backups von Geheimnissen erstellen</li>
+<li><strong><a href="https://github.com/hephaest0s/usbkill">USBKill</a></strong> - Anti-Forensik-USB-Killswitch</li>
+<li><strong><a href="https://github.com/aforensics/HiddenVM">HiddenVM</a></strong> - Oracle VM auf TailsOS ausführen</li>
+<li><strong><a href="https://v2ray.com/en/">V2Ray</a></strong>, <a href="https://www.v2fly.org/">V2Fly</a>, <a href="https://github.com/freefq/free">V2RayN</a> oder <a href="https://github.com/v2fly/v2ray-core">v2ray-core</a> - DIY-Datenschutznetzwerk</li>
+<li>V2Ray-Tools - <a href="https://github.com/2dust/v2rayN">GUI</a>, <a href="https://github.com/Qv2ray/Qv2ray">2</a> / <a href="https://github.com/Loyalsoldier/geoip">GeoIP</a> / <a href="https://fanqiang.network/">Kostenloser Server</a> / <a href="https://cloudflare-v2ray.vercel.app/">Cloudflare-Scan</a> / <a href="https://github.com/freefq/tutorials">Tutorial</a></li>
+<li><strong><a href="https://www.freecarrierlookup.com/">FreeCarrierLookup</a></strong> - Telefonanbieterdaten abrufen</li>
+<li><strong><a href="https://reddit.com/r/privacy">/r/Privacy</a></strong>, <strong><a href="https://www.reddit.com/r/thehatedone">/r/TheHatedOne</a></strong> oder <strong><a href="https://www.reddit.com/r/privatelife/">/r/privatelife/</a></strong> - Diskussion, Nachrichten und Tools zur Privatsphäre</li>
+<li><strong><a href="https://docs.google.com/document/d/1QYqmJsifBjf_xA23Ea7AdeMFyjGWaF_dvhi5EZdNUf4/edit">Facebook Doc Stories</a></strong> - Facebook-Missbrauchsindex</li>
+<li><strong><a href="https://privacy.com/">Privacy.com</a></strong> - Sichere Zahlungen tätigen / Nur USA</li>
+<li><strong><a href="https://everestpipkin.github.io/image-scrubber">image-scrubber</a></strong> / <a href="https://github.com/everestpipkin/image-scrubber">GitHub</a> - Protestfotos anonymisieren</li>
+<li><strong><a href="https://www.privacyguides.org/en/device-integrity/">Mobile Verification Toolkit</a></strong> - Potenzielle Kompromittierungen auf Android/iOS überprüfen</li>
+<li><strong><a href="https://gofoss.net/">GoFOSS</a></strong> - Warum Sie FOSS-Alternativen nutzen sollten</li>
+<li><strong><a href="https://docs.google.com/document/d/176Yds1p63Q3iaKilw0luChMzlJhODdiPvF2I4g9eIXo/">If An Agent Knocks</a></strong> - Best Practices, wenn Agenten Sie kontaktieren</li>
+</ul>
+<hr>
+<doc-anchor-target id="privatsphäre-indexes">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#privatsphäre-indexes">#</doc-anchor-trigger>
+        <span>Privatsphäre-Indexes</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong><a href="https://awesome-privacy.xyz/">Lissy93&#x27;s Awesome Privacy</a></strong> / <a href="https://github.com/lissy93/awesome-privacy">GitHub</a> oder <a href="https://pluja.github.io/awesome-privacy/">pluja&#x27;s Awesome Privacy</a> / <a href="https://github.com/pluja/awesome-privacy">GitHub</a> - Liste von Datenschutzsoftware und -diensten</li>
+<li><strong><a href="https://digital-defense.io/">Digital Defense</a></strong> - Persönliche Checkliste für Privatsphäre und Sicherheit</li>
+<li><strong><a href="https://anonymousplanet.org/">The Hitchhiker’s Guide</a></strong> - Umfassende Anleitung zur Online-Anonymität</li>
+<li><strong><a href="https://www.privacyguides.org/">Privacy Guides</a></strong> - Bildungsanleitung</li>
+<li><strong><a href="https://ssd.eff.org/">Surveillance Self-Defense</a></strong> - Bildungsanleitung</li>
+<li><strong><a href="https://thenewoil.org/">The New Oil</a></strong> - Bildungsanleitung</li>
+<li><strong><a href="https://defensivecomputingchecklist.com/">Defensive Computing Checklist</a></strong> - Bildungsanleitung</li>
+<li><strong><a href="https://cyber.kenharris.io/">Ken Harris</a></strong> - Bildungsanleitung</li>
+<li><strong><a href="https://avoidthehack.com/">AvoidTheHack</a></strong> - Bildungsblog</li>
+<li><strong><a href="https://privacytoolslist.com/">Privacy Tools List</a></strong> - Datenschutz-Tools</li>
+<li><strong><a href="https://hostux.network/">Hostux</a></strong> - Datenschutz-Tools</li>
+<li><strong><a href="https://github.com/StellarSand/privacy-settings">Privacy Settings</a></strong> - Anleitungen zu Datenschutzeinstellungen</li>
+<li><strong><a href="https://github.com/redecentralize/alternative-internet">Alternative Internet</a></strong> - Sammlung dezentraler Tools</li>
+<li><strong><a href="https://encryptedlist.xyz/">EncryptedList</a></strong> - Liste verschlüsselter Dienste/Apps</li>
+<li><strong><a href="https://productiveprivacy.com/">ProductivePrivacy</a></strong> - Datenschutzorientierte Produktivitäts-Apps</li>
+</ul>
+<hr>
+<doc-anchor-target id="linux-privatsphäre">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#linux-privatsphäre">#</doc-anchor-trigger>
+        <span><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/linux#wiki_.25BA_linux_adblock_.2F_privacy">Linux-Privatsphäre</a></span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="mac-privatsphäre">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mac-privatsphäre">#</doc-anchor-trigger>
+        <span><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/linux#wiki_.25BA_mac_adblock_.2F_privacy">Mac-Privatsphäre</a></span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="android-privatsphäre">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#android-privatsphäre">#</doc-anchor-trigger>
+        <span><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/android#wiki_.25B7_android_privacy">Android-Privatsphäre</a></span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="ios-privatsphäre">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ios-privatsphäre">#</doc-anchor-trigger>
+        <span><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/android#wiki_.25B7_ios_privacy">iOS-Privatsphäre</a></span>
+    </h2>
+</doc-anchor-target>
+<hr>
+<doc-anchor-target id="web-privatsphäre">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#web-privatsphäre">#</doc-anchor-trigger>
+        <span>Web-Privatsphäre</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><strong><a href="https://www.techspot.com/article/2752-all-google-alternatives/">Google-Alternativen-Liste</a></strong>, <strong><a href="https://www.reddit.com/r/degoogle">/r/DeGoogle</a></strong>, <strong><a href="https://tycrek.github.io/degoogle/">Degoogle</a></strong> oder <strong><a href="https://nomoregoogle.com/">No More Google</a></strong> - Google-App-Alternativen</li>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_encrypted_messengers">Verschlüsselte Messaging-Apps</a></strong> / <a href="https://docs.google.com/spreadsheets/d/1-UlA4-tslROBDS9IqHalWVztqZo7uxlCeKPQ-8uoFOU">2</a> / <a href="https://www.securemessagingapps.com/">3</a></li>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_encrypted_xmpp_servers">Verschlüsselte XMPP-Server</a></strong></li>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/text-tools#wiki_.25B7_encode_.2F_decode">URLs kodieren / dekodieren</a></strong></li>
+<li><strong><a href="https://privacyspy.org/">PrivacySpy</a></strong> oder <a href="https://tosdr.org/">Terms of Service; Didn&#x27;t Read</a> - Websites-Datenschutzrichtlinien</li>
+<li><strong><a href="https://justgetmydata.com/">JustGetMyData</a></strong> - Links, um Ihre Daten von Websites zu erhalten</li>
+<li><strong><a href="https://safing.io/">Safing Portmaster</a></strong> - Netzwerkmonitor / DNS-Resolver / Firewall / AdBlocker / Sicherheitstool</li>
+<li><strong><a href="https://github.com/henrypp/simplewall">simplewall</a></strong>, <a href="https://www.binisoft.org/wfc.php">WFC</a>, <a href="https://www.pfsense.org/">pfSense</a> / <a href="https://youtu.be/am7xT-zU1Q0">Anleitung</a> oder <a href="https://tinywall.pados.hu/">Tinywall</a> - Firewall / Netzwerkmonitore</li>
+<li><strong><a href="https://cryptomator.org/">Cryptomator</a></strong>, <a href="https://www.boxcryptor.com/en/">Boxcryptor</a> oder <a href="https://tahoe-lafs.org/trac/tahoe-lafs">Tahoe-LAFS</a> - Cloud-Dateiverschlüsselung</li>
+<li><strong><a href="https://monitor.firefox.com/">FirefoxMonitor</a></strong> - Datenleck-Check</li>
+<li><strong><a href="https://breachdirectory.org">BreachDirectory</a></strong>, <a href="https://snusbase.com/">Snusbase</a>, <a href="https://leak-lookup.com/">Leak Lookup</a>, <a href="https://trufflesecurity.com/trufflehog">Trufflehog</a> oder <a href="https://leakpeek.com/">leakpeek</a> - Datenleck-Suchmaschinen</li>
+<li><strong><a href="https://justdeleteme.xyz/">JustDeleteMe</a></strong> - Alte Konten finden / kündigen</li>
+<li><strong><a href="https://openphish.com/">OpenPhish</a></strong>, <a href="https://report.netcraft.com/report">Netcraft Report</a>, <a href="https://phishstats.info/">PhishStats</a> oder <a href="https://phishtank.org/">PhishTank</a> - Phishing-Websites melden</li>
+<li><strong><a href="https://www.cloudflare.com/ssl/encrypted-sni/">encrypted-sni</a></strong> - Netzwerk-/Browser-Sicherheit überprüfen</li>
+<li><strong><a href="https://element.io/">Element</a></strong>, <a href="https://www.linphone.org/">linphone</a>, <a href="https://jami.net/">Jami</a>, <a href="https://tox.chat/">Tox</a> oder <a href="https://bitmask.net/">Bitmask</a> - Verschlüsselte Nachrichten / Videoanrufe</li>
+<li><strong><a href="https://gitlab.com/An0/SimpleDiscordCrypt">SimpleDiscordCrypt</a></strong> - Discord-Nachrichtenverschlüsselung</li>
+<li><strong><a href="https://github.com/shazow/ssh-chat">ssh-chat</a></strong> oder <a href="https://github.com/quackduck/devzat">Devzat</a> - SSH-Chat / <a href="https://shazow.net/posts/ssh-how-does-it-even/">Info</a></li>
+<li><strong><a href="https://gpgtools.org/">GPGTools</a></strong> - Daten / Kommunikation verschlüsseln und signieren</li>
+<li><strong><a href="https://joinpeertube.org/">PeerTube</a></strong> / <a href="https://search.joinpeertube.org/">2</a> / <a href="https://sepiasearch.org/">3</a> - Dezentralisiertes Video-Hosting / <a href="https://instances.joinpeertube.org/instances">Instanzen</a></li>
+<li><strong><a href="https://redact.dev/">Redact</a></strong> - Twitter / Reddit-Beiträge löschen</li>
+<li><strong><a href="https://victornpb.github.io/undiscord">Undiscord</a></strong>, <a href="https://github.com/cedws/discord-delete">discord-delete</a> oder <a href="https://u.nu/9i9jk">QuickDeleteMessages</a> - Discord-Nachrichten löschen / <a href="https://i.ibb.co/pdg4hRr/0b0d78219f05.png">Warnung</a></li>
+<li><strong><a href="https://github.com/Nick-Gottschlich/Social-Amnesia">Social Amnesia</a></strong> - Reddit / Twitter automatische Beitragslöschung</li>
+<li><strong><a href="https://gist.github.com/aymericbeaumet/d1d6799a1b765c3c8bc0b675b1a1547d">delete-likes-from-twitter</a></strong> - Twitter-Likes / Favoriten löschen</li>
+<li><strong><a href="http://unfavinator.com/">Unfavinator</a></strong> - Twitter-Favoriten löschen</li>
+<li><strong><a href="https://tweetdelete.net/">TweetDelete</a></strong> oder <a href="https://www.tweeteraser.com/">TweetEraser</a>** - Twitter-Beiträge in Bulk löschen</li>
+<li><strong><a href="https://github.com/j0be/PowerDeleteSuite">PowerDeleteSuite</a></strong> - Reddit automatische Beitragslöschung</li>
+<li><strong><a href="https://github.com/gurland/telegram-delete-all-messages">telegram-delete-all-messages</a></strong> - Telegram-Nachrichten löschen</li>
+<li><strong><a href="https://freenetproject.org/">Freenet Project</a></strong> - Freenet-Websites durchsuchen / veröffentlichen</li>
+<li><strong><a href="https://0xacab.org/jvoisin/mat2">Mat2</a></strong> / <a href="https://metadatacleaner.romainvigier.fr/">Desktop</a>, <a href="https://0xacab.org/jvoisin/mat2-web">2</a>, <a href="https://gitlab.com/rmnvgr/metadata-cleaner">metadata-cleaner</a> - Metadaten aus Dateien entfernen</li>
+</ul>
+<hr>
+<doc-anchor-target id="browser-privatsphäre">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#browser-privatsphäre">#</doc-anchor-trigger>
+        <span>Browser-Privatsphäre</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong><a href="https://github.com/mikalv/awesome-i2p">Awesome I2P</a></strong> - I2P-Ressourcen</li>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/internet-tools#wiki_.25BA_browser_tools">Browser-Vergleiche</a></strong></li>
+<li><strong><a href="https://www.torproject.org/">Tor Browser</a></strong> - Onion-gerouteter Browser / <a href="https://gitlab.torproject.org/tpo/applications/tor-browser">Gitlab</a></li>
+<li><strong><a href="https://mullvad.net/en/browser">Mullvad Browser</a></strong> - Tor Browser Fork (ohne Tor-Netzwerk)</li>
+<li><strong><a href="https://github.com/arkenfox/user.js">arkenfox</a></strong> - Firefox-Privatsphären-Tweak / <a href="https://youtu.be/F7-bW2y6lcI">Video</a></li>
+<li><strong><a href="https://librewolf.net/">Librewolf</a></strong> - Vorgetweakter Firefox Fork / <a href="https://github.com/ltguillaume/librewolf-winupdater">Auto-Updater nutzen</a></li>
+<li><strong><a href="https://brave.com/">Brave</a></strong> - Datenschutzorientierter Browser</li>
+<li><strong><a href="https://www.cookiestatus.com/">CookieStatus</a></strong> - Vergleich des Tracking-Schutzes von Browsern</li>
+<li><strong><a href="https://geti2p.net/en/">I2P</a></strong> - Verschlüsseltes privates Netzwerk / <a href="https://rentry.co/CBGI2P">Anleitung</a></li>
+<li><strong><a href="https://lcamtuf.coredump.cx/whack/">Whack</a></strong> oder <a href="https://earthlng.github.io/testpages/visited_links.html">Earthling</a> - Beispielspiele für das Leaken von Browserverlauf</li>
+<li><strong><a href="https://clienttest.ssllabs.com:8443/ssltest/viewMyClient.html">SSL Labs</a></strong> - SSL/TLS-Browser-Fähigkeitstest</li>
+</ul>
+<hr>
+<doc-anchor-target id="passwort-privatsphäre--2fa">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#passwort-privatsphäre--2fa">#</doc-anchor-trigger>
+        <span>Passwort-Privatsphäre / 2FA</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong><a href="https://2fa.directory/">2FA Directory</a></strong> - Liste von Websites mit 2FA-Unterstützung</li>
+<li><strong><a href="https://github.com/ente-io/ente#ente-auth">Ente Auth</a></strong> - Windows / Mac / Android / iOS 2FA / <a href="https://ente.io/blog/cryptography-audit/">Audit</a></li>
+<li><strong><a href="https://getaegis.app/">Aegis</a></strong> - Android 2FA</li>
+<li><strong><a href="https://authenticatorpro.jmh.me">AuthenticatorPro</a></strong> - Android 2FA</li>
+<li><strong><a href="https://haveibeenpwned.com/Passwords">HaveIBeenPwned PW</a></strong> - Passwort-Verlust-Check</li>
+<li><strong><a href="https://i.ibb.co/vZdqMvm/6728c7ef02e9.png">Passwortstärke-Tabelle</a></strong></li>
+<li><strong><a href="https://2fas.com/">2FAS</a></strong> - Android / iOS 2FA / <a href="https://discord.gg/q4cP6qh2g5">Discord</a></li>
+<li><strong><a href="https://github.com/X1nto/Mauth">Mauth</a></strong> - Android 2FA</li>
+<li><strong><a href="https://github.com/helloworld1/FreeOTPPlus">FreeOTPPlus</a></strong> - Android 2FA</li>
+<li><strong><a href="https://keepassxc.org/">KeePassXC</a></strong> - Windows / Mac / Linux 2FA / <a href="https://youtu.be/ckWPHaQwft8">Anleitung</a></li>
+<li><strong><a href="https://authme.levminer.com/">AuthMe</a></strong> - Windows / Mac / Linux 2FA / <a href="https://github.com/Levminer/authme">GitHub</a></li>
+<li><strong><a href="https://github.com/pwltr/tauthy">Tauthy</a></strong> - Windows / Mac / Linux 2FA</li>
+<li><strong><a href="https://developers.yubico.com/yubioath-flutter/">Yubioath</a></strong> - Windows / Android 2FA / YubiKeys</li>
+<li><strong><a href="https://apps.microsoft.com/store/detail/protecc-2fa-client/9PJX91M06TZS">Protecc</a></strong> / <a href="https://github.com/FireCubeStudios/Protecc">GitHub</a> - Windows 2FA</li>
+<li><strong><a href="https://github.com/paolostivanin/OTPClient">OTPClient</a></strong> - Linux 2FA</li>
+<li><strong><a href="https://docs.2fauth.app/">2FAuth</a></strong> - Web-App 2FA / Selbstgehostet</li>
+<li><strong><a href="https://getsentinel.io/">Sentinel</a></strong> - iOS / Mac 2FA</li>
+<li><strong><a href="https://raivo-otp.com/">Raivo OTP</a></strong> - iOS 2FA</li>
+<li><strong><a href="https://apps.apple.com/ca/app/otp-auth/id659877384">OTP Auth</a></strong> - iOS 2FA</li>
+<li><strong><a href="https://www.tofuauth.com/">Tofu</a></strong> - iOS 2FA</li>
+<li><strong><a href="https://authenticator.cc/">Authenticator</a></strong> - Zwei-Faktor-QR-Codes generieren / <a href="https://gitlab.gnome.org/World/Authenticator">GitHub</a></li>
+<li><strong><a href="https://github.com/puddly/android-otp-extractor">Android OTP Extractor</a></strong> oder <a href="https://github.com/jd1378/otphelper">OTP Helper</a> - OTP-Tokens extrahieren</li>
+<li><strong><a href="https://github.com/dyc3/steamguard-cli">SteamGuard</a></strong> - Steam 2FA-Codes generieren</li>
+<li><strong><a href="https://passwordsgenerator.net/">PasswordsGenerator</a></strong> - Sichere Passwörter generieren</li>
+<li><strong><a href="https://intelx.io/">Intelligence X</a></strong> - Passwort-Verlust-Check</li>
+<li><strong><a href="https://psbdmp.ws/">psbdmp</a></strong> - Passwort-Verlust-Check</li>
+<li><strong><a href="https://dehashed.com/">Dehashed</a></strong> - Passwort-Verlust-Check</li>
+<li><strong><a href="https://spycloud.com/">Spycloud</a></strong> - Passwort-Verlust-Check</li>
+<li><strong><a href="https://scatteredsecrets.com/">ScatteredSecrets</a></strong> - Passwort-Verlust-Check</li>
+</ul>
+<hr>
+<doc-anchor-target id="e-mail-privatsphäre">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#e-mail-privatsphäre">#</doc-anchor-trigger>
+        <span>E-Mail-Privatsphäre</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_temp_email_sites">Temporäre E-Mail-Seiten</a></strong> - Temporäre Wegwerf-E-Mails erstellen</li>
+<li><strong><a href="https://haveibeenpwned.com/">Have I been Pwned?</a></strong> - E-Mail-Datenleck-Überwachung</li>
+<li><strong><a href="https://proton.me/mail">Proton Mail</a></strong> - Verschlüsselte E-Mail</li>
+<li><strong><a href="https://simplelogin.io/">SimpleLogin</a></strong> - E-Mail-Aliasing / <a href="https://github.com/simple-login/app">GitHub</a></li>
+<li><strong><a href="https://addy.io/">addy.io</a></strong> - E-Mail-Aliasing / <a href="https://github.com/anonaddy/anonaddy">GitHub</a></li>
+<li><strong><a href="https://duckduckgo.com/email/">DuckDuckGo Email Protection</a></strong> - E-Mail-Aliasing</li>
+<li><strong><a href="https://tuta.com/">Tuta</a></strong> - Verschlüsselte E-Mail</li>
+<li><strong><a href="https://disroot.org/en/services/email">Disroot</a></strong> - Verschlüsselte E-Mail</li>
+<li><strong><a href="https://www.emailprivacytester.com/">EmailPrivacyTester</a></strong> - E-Mail-Privatsphäre-Test</li>
+<li><strong><a href="https://seclists.org/">SecLists</a></strong> - Archiv für Sicherheits-Mailinglisten</li>
+<li><strong><a href="https://phish.ly/">Phish.ly</a></strong> - Verdächtige E-Mails scannen</li>
+<li><strong><a href="https://mailvelope.com/">Mailvelope</a></strong> - E-Mail-Aliasing-Erweiterung</li>
+<li><strong><a href="http://scr.im/">scr.im</a></strong> - E-Mail-Aliasing</li>
+<li><strong><a href="https://altmails.com/">altmails</a></strong> - E-Mail-Aliasing</li>
+<li><strong><a href="https://mailgw.com/">Mailgw</a></strong> - E-Mail-Aliasing</li>
+<li><strong><a href="https://erine.email/">erine.email</a></strong> - E-Mail-Aliasing</li>
+<li><strong><a href="https://33mail.com/">33mail</a></strong> - E-Mail-Aliasing</li>
+<li><strong><a href="https://github.com/forwardemail/forwardemail.net">forwardemail</a></strong> - E-Mail-Aliasing</li>
+<li><strong><a href="https://haveibeensold.app/">Have I Been Sold?</a></strong> - Überwachung von Drittanbieter-E-Mail-Verkäufen</li>
+</ul>
+<hr>
+<doc-anchor-target id="fingerprinting--tracking">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#fingerprinting--tracking">#</doc-anchor-trigger>
+        <span>Fingerprinting / Tracking</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong><a href="https://docs.clearurls.xyz">ClearURLs</a></strong> - Entfernt Tracking-Elemente aus URLs / <a href="https://gitlab.com/ClearURLs/ClearUrls#features">Features</a>, <a href="https://i.ibb.co/4JsQwP5/sqzfmLD.png">2</a> / Kann Websites beschädigen</li>
+<li><strong><a href="https://github.com/kkapsner/CanvasBlocker">CanvasBlocker</a></strong> - Verhindert Canvas-Fingerprinting</li>
+<li><strong><a href="https://gameindustry.eu/en/">GameIndustry</a></strong> - Blockiert Tracker in Desktop- / Mobile-Spielen</li>
+<li><strong><a href="https://abrahamjuliot.github.io/creepjs">Creepjs</a></strong>, <a href="https://www.computec.ch/projekte/browserrecon/?s=scan">BrowserRecon</a>, <a href="https://www.deviceinfo.me/">Device Info</a>, <a href="https://amiunique.org/">AmIUnique?</a>, <a href="https://firstpartysimulator.org/">CoverYourTracks</a> / <a href="https://coveryourtracks.eff.org/">2</a> oder <a href="https://personaldata.info/">PersonalData</a> - Tracking / Fingerprinting-Tests</li>
+<li><strong><a href="https://whotracks.me/">WhoTracksMe</a></strong>, <a href="https://privacyscore.org/">Privacy Score</a>, <a href="https://webbkoll.dataskydd.net/">dataskydd</a>, <a href="https://themarkup.org/blacklight">Blacklight</a> oder <a href="https://trackography.org/">Trackography</a> - Website-Tracking-Informationen</li>
+<li><strong><a href="https://inteltechniques.com/workbook.html">Datenlöschungsanleitung</a></strong> - Online-Daten entfernen</li>
+<li><strong><a href="https://browserleaks.com/">BrowserLeaks</a></strong>, <a href="https://rentry.co/astrill">Astrill</a>, <a href="https://www.comparitech.com/privacy-security-tools/dns-leak-test/">Comparitech</a>, <a href="https://www.top10vpn.com/tools/do-i-leak/">Do I leak?</a> oder <a href="https://ipleak.org/">IPLeak</a> / <a href="https://ipleak.com/">2</a> / <a href="https://ipleak.net">3</a> - IP-Leak-Tests</li>
+<li><strong><a href="https://www.dnsleaktest.com/">DNS-Leak-Test</a></strong>, <a href="https://bash.ws/dnsleak">Bash-DNS-Test</a> oder <a href="https://dnscheck.tools">DNS-Check</a> - DNS-Leak-Tests</li>
+<li><strong><a href="https://ip.voidsec.com/">Voidsec</a></strong> - WebRTC-Leak-Tests</li>
+<li><strong><a href="https://www.whatismybrowser.com/detect/what-is-my-user-agent">WhatIsMyBrowser</a></strong> - Benutzeragenten-Erkennung</li>
+<li><strong><a href="https://www.trackmenot.io/">TrackMeNot</a></strong> - Tracking-Schutz</li>
+<li><strong><a href="https://jshelter.org/">JShelter</a></strong> - Fingerprinting verhindern / <a href="https://github.com/arkenfox/user.js/issues/1729#issuecomment-1739135479">Warnung</a></li>
+<li><strong><a href="https://z0ccc.github.io/extension-detector">Extension Detector</a></strong> / <a href="https://github.com/z0ccc/extension-detector">GitHub</a> - Erweiterungs-Fingerprinting-Tests</li>
+<li><strong><a href="https://noscriptfingerprint.com/">NoScriptFingerprint</a></strong> - Non-JavaScript-Fingerprinting</li>
+<li><strong><a href="https://chromewebstore.google.com/detail/locale-switcher/kngfjpghaokedippaapkfihdlmmlafcc">Language Switcher</a></strong> / <a href="https://github.com/locale-switcher/locale-switcher">GitHub</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/languageswitch">2</a> - Sprachkennzeichen ändern</li>
+<li><strong><a href="https://adguardteam.github.io/AnonymousRedirect/">AnonymousRedirect</a></strong> - Links anonymisieren</li>
+<li><strong><a href="https://simpleoptout.com/">Simple Opt Out</a></strong> - Targeted Ads ausschalten</li>
+<li><strong><a href="https://adnauseam.io/">AdNauseam</a></strong> - AdBlocker / Falsche Klicks zur Verwirrung des Trackings</li>
+<li><strong><a href="https://greasyfork.org/en/scripts/404632">Twitter Direct</a></strong> - Entfernt t.co-Tracking von Twitter</li>
+</ul>
+<hr>
+<doc-anchor-target id="frontends">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#frontends">#</doc-anchor-trigger>
+        <span>Frontends</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong><a href="https://github.com/mendel5/alternative-front-ends">Alt Frontends</a></strong> / <a href="https://rentry.co/8kqrrn">2</a>, <a href="https://farside.link/">Farside</a> oder <a href="https://github.com/digitalblossom/alternative-frontends">alternative-frontends</a> - Frontend-Indexe</li>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/social-media#wiki_.25B7_youtube_frontends">YouTube-Frontends</a></strong></li>
+<li><strong><a href="https://libredirect.github.io/">LibRedirect</a></strong> / <a href="https://github.com/libredirect/libredirect">2</a>, <a href="https://github.com/libreom/predirect">Predirect</a> oder <a href="https://openuserjs.org/scripts/sjehuda/Proxy_Redirect">Proxy Redirect</a> - Frontend-Redirect-Erweiterungen</li>
+<li><strong><a href="https://github.com/heyLu/numblr">Numblr</a></strong> - Selbstgehostetes Frontend-Redirect</li>
+<li><strong><a href="https://photon-reddit.com/">Photon</a></strong>, <strong><a href="https://reditr.com/">reditr</a></strong>, <strong><a href="https://rdx.overdevs.com/">RDX</a></strong> oder <strong><a href="https://github.com/redlib-org/redlib">redlib</a></strong> - Reddit-Frontends</li>
+<li><strong><a href="https://addons.mozilla.org/en-US/firefox/addon/hooktube-redirect/?src=search">Invidious Redirect</a></strong> - YouTube-Frontend-Redirect</li>
+<li><strong><a href="https://twstalker.com/">twstalker</a></strong> - Twitter-Frontend</li>
+<li><strong><a href="https://codeberg.org/ThePenguinDev/Proxigram">Proxigram</a></strong> oder <a href="https://imginn.com">Imginn</a>** - Instagram-Frontends</li>
+<li><strong><a href="https://github.com/pablouser1/ProxiTok">Proxitok</a></strong> oder <a href="https://tiknot.netlify.app/">TikNot</a>** / <a href="https://greasyfork.org/en/scripts/482683">Redirect</a> - TikTok-Frontends</li>
+<li><strong><a href="https://www.tumlook.com/">Tumlook</a></strong> oder <a href="https://github.com/syeopite/priviblur">PriviBlur</a>** - Tumblr-Frontends</li>
+<li><strong><a href="https://breezewiki.com/">BreezeWiki</a></strong> - Fandom-Frontend / <a href="https://pastebin.com/DmbrhEDD">Spiegel</a></li>
+<li><strong><a href="https://0xacab.org/johnxina/mikuinvidious">MikuInvidious</a></strong> - BiliBili-Frontend</li>
+<li><strong><a href="https://codeberg.org/SafeTwitch/safetwitch">SafeTwitch</a></strong> oder <a href="https://codeberg.org/CloudyyUw/twineo">Twineo</a>** - Twitch-Frontends</li>
+<li><strong><a href="https://benbusby.com/projects/whoogle-search/">Whoogle</a></strong> - Google-Suche-Frontend</li>
+<li><strong><a href="https://github.com/TheDavidDelta/lingva-translate">Lingva Translate</a></strong> - Google Translate-Frontend</li>
+<li><strong><a href="https://sr.ht/%7Eedwardloveall/Scribe/">Scribe</a></strong>, <a href="https://medium.rip/">medium.rip</a>** oder <a href="https://libmedium.batsense.net/">LibMedium</a>** - Medium-Frontends</li>
+<li><strong><a href="https://quetre.iket.me">Quetre</a> / <a href="https://github.com/zyachel/quetre">GitHub</a></strong> - Quora-Frontend</li>
+<li><strong><a href="https://codeberg.org/rimgo/rimgo">Rimgo</a></strong> - Imgur-Frontend / <a href="https://rimgo.codeberg.page/">Instanzen</a>, <a href="https://codeberg.org/rimgo/instances">2</a></li>
+<li><strong><a href="https://github.com/Ahwxorg/Binternet">Binternet</a></strong> - Pinterest-Frontend</li>
+<li><strong><a href="https://codeberg.org/VnPower/pixivfe">Pixivfe</a></strong> - Pixiv-Frontend</li>
+<li><strong><a href="https://codeberg.org/gothub/gothub">Gothub</a></strong> - GitHub-Frontend</li>
+<li><strong><a href="https://code.whatever.social">AnonymousOverflow</a></strong> - StackOverflow-Frontend</li>
+<li><strong><a href="https://codeberg.org/sun/Tent">Tent</a></strong> - Bandcamp-Frontend</li>
+<li><strong><a href="https://codeberg.org/rramiachraf/dumb">Dumb</a></strong> oder <a href="https://intellectual.insprill.net/">Intellectual</a>** - Genius-Frontend</li>
+<li><strong><a href="https://codeberg.org/zortazert/rural-dictionary">Rural Dictionary</a></strong> - Urban Dictionary-Frontend</li>
+<li><strong><a href="https://codeberg.org/nesaku/BiblioReads">BiblioReads</a></strong> - Goodreads-Frontend</li>
+<li><strong><a href="https://libremdb.iket.me">LibreMDb</a></strong> - IMDb-Frontend</li>
+<li><strong><a href="https://neuters.de/">Neuters</a></strong> - Reuters-Frontend</li>
+</ul>
+<hr>
+<doc-anchor-target id="suchmaschinen">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#suchmaschinen">#</doc-anchor-trigger>
+        <span>Suchmaschinen</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong><a href="https://searx.nixnet.services/">nixnet</a></strong>, <a href="https://searx.space/">searx.space</a>** oder <a href="https://www.startpage.com/sp/search?q=%22powered%20by%20Searx%22">Searx Index</a>** - Searx-Instanz-Indexe</li>
+<li><strong><a href="https://searx.fmhy.net/">searx.fmhy</a></strong>, <a href="https://search.fuckoffgoogle.net/">Fuck Off Google</a><strong>, <a href="https://searx.be/">searx</a></strong>, <a href="https://searx.tiekoetter.com/">tiekoetter</a><strong>, <a href="https://monocles.de/">monocles</a></strong> - Searx-Instanz</li>
+<li><strong><a href="https://metager.org/">Metager</a></strong></li>
+<li><strong><a href="https://trystract.com/">Stract</a></strong></li>
+<li><strong><a href="https://araa.extravi.dev/">Araa</a></strong></li>
+<li><strong><a href="https://duckduckgo.com/">DuckDuckGo</a></strong> - <a href="https://duckduckgo.com/bangs">Shortcuts</a></li>
+<li><strong><a href="https://whoogle.fmhy.net/">whoogle.fmhy</a></strong> - Whoogle-Instanz</li>
+<li><strong><a href="https://notabug.org/CYBERDEViL/searx-qt">searx-qt</a></strong> - Searx-Desktop-App</li>
+<li><strong><a href="https://github.com/Ahwxorg/librey">LibreY</a></strong> oder <a href="https://github.com/hnhx/librex">LibreX</a>**</li>
+<li><strong><a href="https://4get.ca/">4get</a></strong></li>
+<li><strong><a href="https://www.mojeek.com/">Mojeek</a></strong></li>
+<li><strong><a href="https://www.qwant.com/">Qwant</a></strong></li>
+<li><strong><a href="https://swisscows.com/">Swisscows</a></strong></li>
+<li><strong><a href="https://yacy.net/">YaCy</a></strong></li>
+<li><strong><a href="https://www.startpage.com/">Startpage</a></strong></li>
+<li><strong><a href="https://search.brave.com/">Brave Search</a></strong></li>
+<li><strong><a href="https://www.searchencrypt.com/">Search Encrypt</a></strong></li>
+<li><strong><a href="https://ekoru.org/">ekoru</a></strong></li>
+<li><strong><a href="https://gibiru.com/">Gibiru</a></strong></li>
+<li><strong><a href="https://docs.searxng.org/">SearXNG</a></strong> - Selbstgehostet</li>
+<li><strong><a href="https://pypi.org/project/whoogle-search/">Whoogle</a></strong> - Selbstgehostet</li>
+</ul>
+<hr>
+<doc-anchor-target id="vpn">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#vpn">#</doc-anchor-trigger>
+        <span>VPN</span>
+    </h2>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p><strong>Hinweis:</strong> Für Torrenting wird empfohlen, einen kostenpflichtigen VPN zu verwenden, da kostenlose VPNs nur für Dinge wie das Anzeigen von durch ISP / Land blockierten Websites wirklich nützlich sind.</p>
+        </div>
+    </div>
+</div>
+<hr>
+<ul>
+<li><strong><a href="https://redd.it/171h9qa">VPN-Vergleiche</a></strong> oder <a href="https://techlore.tech/vpn">Techlore Chart</a>** - VPN-Vergleichstabellen</li>
+<li><strong><a href="https://kumu.io/sobeyharker/vpn-relationships">VPN-Beziehungen</a></strong> - VPN-Beziehungstabelle</li>
+<li><strong><a href="https://www.reddit.com/r/vpns/">/r/VPNs</a></strong> - VPN-Hilfe und Diskussion</li>
+<li><strong><a href="https://airvpn.org/">AirVPN</a></strong></li>
+<li><strong><a href="https://windscribe.com">Windscribe</a></strong> - Kostenlose Version verfügbar / <a href="https://blog.windscribe.com/tag/relief-codes/">Entlastungscodes</a></li>
+<li><strong><a href="https://protonvpn.com">Proton</a></strong> - <a href="https://gist.github.com/fusetim/1a1ee1bdf821a45361f346e9c7f41e5a">Konfigurationsgenerierung</a>** / Kein Torrenting mit kostenloser Version</li>
+<li><strong><a href="https://one.one.one.one/">Warp</a></strong> - Verkehrverschlüsselungs-VPN / <a href="https://github.com/ViRb3/wgcf">Client</a>** / <a href="https://t.me/warpplus">Warp+ Daten</a><strong>, <a href="https://github.com/nxvvvv/warp-plus">2</a></strong>, <a href="https://github.com/totoroterror/warp-cloner">3</a><strong>, <a href="https://t.me/generatewarpplusbot">4</a></strong>, <a href="https://rentry.co/warp_plus_free">5</a>** / <a href="https://rentry.co/warpwarning">Warp+ Warnung</a>** / <a href="https://rentry.co/foss-warp">WireGuard Anleitung</a>**</li>
+<li><strong><a href="https://riseup.net/en/vpn">Riseup</a></strong> - Kostenloser VPN</li>
+<li><strong><a href="https://mullvad.net/">Mullvad</a></strong> - <a href="https://mullvad.net/en/blog/2023/4/20/mullvad-vpn-was-subject-to-a-search-warrant-customer-data-not-compromised/">No-Logging</a>** / <a href="https://mullvad.net/en/blog/2023/5/29/removing-the-support-for-forwarded-ports/">Port-Warnung</a></li>
+<li><strong><a href="https://www.ivpn.net/">IVPN</a></strong> - <a href="https://www.ivpn.net/knowledgebase/privacy/how-do-we-react-when-requested-by-an-authority-for-information-relating-to-a-customer/">No Logging</a>** / <a href="https://www.ivpn.net/blog/gradual-removal-of-port-forwarding/">Port-Warnung</a></li>
+<li><strong><a href="https://www.ovpn.com/">OVPN</a></strong> - <a href="https://www.ovpn.com/en/blog/ovpn-wins-court-order">No Logging</a></li>
+<li><strong><a href="https://www.vpngate.net/en/download.aspx">VPN Gate</a></strong> - Kostenloser VPN / <a href="https://pastebin.com/TrSw7EpF">Hinweis</a></li>
+<li><strong><a href="https://privadovpn.com/">PrivadoVPN</a></strong> - Kostenloser VPN / Unbegrenzte Konten über <a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_temp_email_sites">Temp Mail</a></li>
+<li><strong><a href="https://leap.se/">Leap VPN</a></strong> - Kostenlose VPNs</li>
+<li><strong><a href="https://www.vpnbook.com/">VPNBook</a></strong> - Kostenlose VPN-Konten</li>
+</ul>
+<hr>
+<doc-anchor-target id="vpn-tools">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#vpn-tools">#</doc-anchor-trigger>
+        <span>VPN-Tools</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_free_vpn_configs">Kostenlose VPN-Konfigurationen</a></strong></li>
+<li><strong><a href="https://redd.it/ssy8vv">Anleitung zum Binden von VPN an Client</a></strong> - VPN an Client binden, um ISP-Briefe zu vermeiden</li>
+<li><strong><a href="https://www.wireguard.com/">WireGuard</a></strong> - VPN-Tunnel / <a href="https://github.com/amritb/poor-mans-vpn">Setup-Anleitung</a>** / <a href="https://guardline-vpn.github.io/wireguard-tools/">Tools</a>** / <a href="https://github.com/perara/wg-manager">Manager</a>** / <a href="https://hub.docker.com/r/weejewel/wg-easy">WebUI</a></li>
+<li><strong><a href="https://openvpn.net/">OpenVPN</a></strong> oder <a href="https://www.tinc-vpn.org/">TincVPN</a>** - VPN-Tunnel</li>
+<li><strong><a href="https://github.com/IAmStoxe/wirehole">WireHole</a></strong> - Wireguard VPN mit Werbeblock-Funktionalität / <a href="https://github.com/10h30/wirehole-ui">Benutzeroberfläche</a></li>
+<li><strong><a href="https://www.syntropystack.com/vpn">Syntropy</a></strong>, <a href="https://github.com/rajannpatel/Pi-Hole-on-Google-Compute-Engine-Free-Tier-with-Full-Tunnel-and-Split-Tunnel-Wireguard-VPN-Configs">Selbstgehosteter VPN</a><strong>, <a href="https://github.com/vpnhood/VpnHood">VpnHood</a></strong>, <a href="https://github.com/ntop/n2n">n2n</a><strong>, <a href="https://github.com/hwdsl2/setup-ipsec-vpn">ipsec-vpn</a></strong> oder <a href="https://getoutline.org/">Outline</a>** - Selbstgehosteter VPN</li>
+<li><strong><a href="https://www.infradead.org/openconnect/">OpenConnect</a></strong> - SSL-VPN / <a href="https://openconnect.github.io/openconnect-gui/">GUI</a></li>
+<li><strong><a href="https://hub.docker.com/r/qmcgaw/gluetun">Gluetun</a> / <a href="https://github.com/qdm12/gluetun">GitHub</a></strong> - Tunnel Ihre Docker-Container durch ein VPN</li>
+<li><strong><a href="https://pritunl.com/">Pritunl</a></strong> - VPN-Server</li>
+<li><strong><a href="https://blog.trailofbits.com/2016/12/12/meet-algo-the-vpn-that-works/">Algo VPN</a> / <a href="https://github.com/trailofbits/algo">GitHub</a></strong> - Cloud-VPN</li>
+<li><strong><a href="https://amnezia.org/">Amnezia</a></strong> - Selbstgehosteter VPN</li>
+<li><strong><a href="https://github.com/Mygod/VPNHotspot">VPNHotspot</a></strong> - VPN-Verbindung über Hotspot teilen</li>
+</ul>
+<hr>
+<doc-anchor-target id="proxy">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#proxy">#</doc-anchor-trigger>
+        <span>Proxy</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="proxy-apps">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#proxy-apps">#</doc-anchor-trigger>
+        <span>Proxy-Apps</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong><a href="https://lantern.io/">Lantern</a></strong> oder <strong><a href="https://psiphon.ca/">Psiphon</a></strong> - Kostenloser Proxy / VPN</li>
+<li><strong><a href="https://github.com/msasanmh/SecureDNSClient">SecureDNSClient</a></strong> - DNS-Proxy-GUI / <a href="https://rentry.co/SecureDNSClient">Anleitung</a></li>
+<li><strong><a href="https://rentry.co/enable-ech">ISP-Sperren umgehen</a></strong> - ISP-Zensur mit Firefox umgehen</li>
+<li><strong><a href="https://ntc.party/">No Thought is a Crime</a></strong> - Internet-Zensur-Diskussion</li>
+<li><strong><a href="https://github.com/ValdikSS/GoodbyeDPI/">GoodbyeDPI</a> / <a href="https://github.com/mguludag/GUI-for-GoodbyeDPI">GUI</a></strong>, <a href="https://github.com/krlvm/PowerTunnel">PowerTunnel</a>** oder <a href="https://github.com/SadeghHayeri/GreenTunnel">Green Tunnel</a>** - DPI-Umgehung lokale Proxies</li>
+<li><strong><a href="https://github.com/Snawoot/hola-proxy">Hola Proxy</a></strong> - Alternativer Client für Hola Free Proxy Service</li>
+<li><strong><a href="https://addons.mozilla.org/en-US/firefox/addon/hide-me-vpn-free-proxy/">Hide.me Firefox</a> / <a href="https://chromewebstore.google.com/detail/hideme-proxy/ohjocgmpmlfahafbipehkhbaacoemojp">Chrome</a></strong> oder <a href="https://anonymox.net/en">anonymoX</a>** - Kostenloser Proxy-Service-Browser-Erweiterung</li>
+<li><strong><a href="https://snowflake.torproject.org/">Snowflake</a></strong> - Tor-Proxy-Browser-Erweiterung</li>
+<li><strong><a href="https://censortracker.org/">CensorTracker</a></strong>, <a href="https://getfoxyproxy.org/">FoxyProxy</a>** oder <a href="https://github.com/FelisCatus/SwitchyOmega">SwitchyOmega</a>** - Proxy-Erweiterungen</li>
+<li><strong><a href="https://mayakron.altervista.org/">Acrylic</a></strong> - Lokaler DNS-Cache-Proxy</li>
+<li><strong><a href="https://github.com/instantsc/SimpleDnsCrypt">SimpleDnsCrypt</a></strong> - DNS-Verschlüsselungs-Proxy</li>
+<li><strong><a href="https://github.com/0xERR0R/blocky">Blocky</a></strong> - DNS-Proxy</li>
+<li><strong><a href="https://www.proxifier.com/">Proxifier</a></strong> - Proxy-Funktionalität zu Apps hinzufügen / <a href="https://rentry.co/FMHYBase64#proxifier-keys">Keys</a></li>
+<li><strong><a href="https://github.com/pufferffish/wireproxy">wireproxy</a></strong> - VPNs als Proxies verwenden</li>
+<li><strong><a href="https://hiddify.com/">Hiddify</a></strong> - Auto-Proxy-Client</li>
+<li><strong><a href="https://nginxproxymanager.com">NginxProxyManager</a> / <a href="https://github.com/NginxProxyManager/nginx-proxy-manager">GitHub</a></strong> - Selbstgehosteter Proxy-Server</li>
+<li><strong><a href="https://shadowsocks.org/">Shadowsocks</a></strong> - Proxy-Client und selbstgehosteter Server / <a href="https://github.com/ruanfei/cross">Kostenlose Server</a><strong>, <a href="https://github.com/vxiaov/free_proxies">2</a></strong>, <a href="https://shadowmere.akiel.dev/">3</a>** / <a href="https://github.com/shadowsocks/shadowsocks-windows">Client</a></li>
+<li><strong><a href="https://v2.hysteria.network/">Hysteria</a></strong> - Proxy-Client und selbstgehosteter Server</li>
+<li><strong><a href="https://github.com/XTLS/Xray-core">Xray</a></strong> - Proxy-Client und selbstgehosteter Server / <a href="https://t.me/projectXray">Telegram</a></li>
+<li><strong><a href="https://docs.titaniumnetwork.org/proxies/ultraviolet">Ultraviolet</a></strong> oder <a href="https://github.com/cognetwork-dev/Metallic">Metallic</a>** - Selbstgehostete Proxy-Websites</li>
+<li><strong><a href="https://redd.it/tz7nyx">1337x Proxy</a></strong> - 1337x Proxy-Anleitung / <a href="https://pastebin.com/3n5K0QrP">Beispiel</a></li>
+</ul>
+<hr>
+<doc-anchor-target id="proxy-websites">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#proxy-websites">#</doc-anchor-trigger>
+        <span>Proxy-Websites</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_proxy_lists">Proxy-Listen</a></strong></li>
+<li><strong><a href="https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_piracy_site_proxies">Piracy-Site-Proxies</a></strong></li>
+<li><strong><a href="https://www.proxysite.com/">ProxySite</a></strong></li>
+<li><strong><a href="https://www.genmirror.com/">GenMirror</a></strong></li>
+<li><strong><a href="https://hide.me/en/proxy">Hide.me</a></strong></li>
+<li><strong><a href="https://www.sslsecureproxy.com/">SSLSecureProxy</a></strong></li>
+<li><strong><a href="https://www.hideip.co/">HideIP</a></strong></li>
+<li><strong><a href="https://www.4everproxy.com/">4EverProxy</a></strong></li>
+<li><strong><a href="https://www.kproxy.com/">KProxy</a></strong></li>
+<li><strong><a href="https://freeproxy.win/">Free Proxy</a></strong></li>
+<li><strong><a href="https://www.blockaway.net/">Blockaway</a></strong></li>
+<li><strong><a href="https://www.free-proxy-servers.com/">Free Proxy Servers</a></strong></li>
+<li><strong><a href="https://www.vpnbook.com/webproxy">VPN Book</a></strong></li>
+<li><strong><a href="https://www.croxyproxy.com/">CroxyProxy</a></strong></li>
+<li><strong><a href="https://croxyproxy.best/">ProxyPx</a></strong></li>
+<li><strong><a href="https://www.proxysite.cc/">ProxySite</a></strong></li>
+<li><strong><a href="https://proxyof2.com/">ProxyOf2</a></strong></li>
+<li><strong><a href="https://www.proxy-urls.com/">Proxy-URLs</a></strong></li>
+<li><strong><a href="https://freeproxy.io/">Sitenable</a></strong></li>
+<li><strong><a href="https://unblocksites.online/">UnblockSites</a></strong></li>
+<li><strong><a href="https://proxyium.com/">Proxyium</a></strong></li>
+<li><strong><a href="https://proxysite.cloud/">Proxy Site</a></strong></li>
+<li><strong><a href="https://translate.google.com/">Google Translate</a></strong> - <a href="https://redd.it/fawkjy">Nutzung</a></li>
+<li><strong><a href="https://github.com/JaredLGillespie/proxyscrape">Proxy Scrape</a></strong> - Python-Bibliothek zum Abrufen kostenloser Proxies</li>
+<li><strong><a href="https://proxy-checker.net/">Proxy-Checker</a></strong>, <strong><a href="https://github.com/iw4p/proxy-scraper">proxy-scraper</a></strong>, <strong><a href="http://www.whatismyproxy.com/">What is my Proxy</a></strong>, <strong><a href="https://github.com/monosans/proxy-scraper-checker">proxy-scraper-checker</a></strong>, <strong><a href="https://github.com/TheSpeedX/socker">Socker</a></strong> oder <strong><a href="https://openproxy.space/software/proxy-checker">Unfx Proxy Checker</a> / <a href="https://github.com/openproxyspace/unfx-proxy-checker">GitHub</a></strong> - Proxy-Scraper / Checker</li>
+<li><strong><a href="https://checksocks5.com/">CheckSocks5</a></strong> - Socks5 Proxy Checker</li>
+<li><strong><a href="https://www.proxynova.com/proxy-server-list/country-ir/">Proxynova</a></strong> - Iranische Proxies</li>
+</ul>
+
+                                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../tools/devtools/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Entwickler Tools</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../tools/ki/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Künstliche Intelligenz</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright THK BlackBoard, with <span class="docs-emoji">&#x1F499;</span> by PunchMeSantana 2024. All rights reserved.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "AdBlocker", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+</body>
+</html>
